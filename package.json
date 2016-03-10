@@ -1,0 +1,21 @@
+{
+  "name": "language-geant4-macro",
+  "author": "Nathanael Lampe <nathanael@natlampe.com>",
+  "version": "0.1.0",
+  "description": "Syntax highlighting for Geant4 macros",
+  "keywords": [
+      "geant4",
+      "grammar",
+      "syntax"
+  ],
+  "activationCommands": {
+    "atom-workspace": "language-geant4-macro:toggle"
+  },
+  "repository": "https://github.com/natl/language-geant4-macro",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

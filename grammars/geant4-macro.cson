@@ -1,0 +1,25 @@
+'scopeName': 'text.geant4-macro'
+
+'fileTypes': [
+    'mac'
+]
+
+'name': 'Geant4 macro'
+'patterns':[
+    {
+        'name': 'comment.line.number-sign'
+        'match': '(#).*$\n'
+    }
+    {
+        'name': 'support.class'
+        'match': '(?<=\/)([a-zA-Z0-9]+)(?=\/)'
+    }
+    {
+        'name': 'support.function'
+        'match': '(?<=\/)([a-zA-Z0-9]+)[ \n]'
+    }
+    {
+        'name': 'constant.boolean'
+        'match': '\b(true|false)\b'
+    }
+]

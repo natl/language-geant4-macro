@@ -1,0 +1,3 @@
+'.text.geant4-macro':
+  'editor':
+    'commentStart': '# '
