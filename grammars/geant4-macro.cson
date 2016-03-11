@@ -22,4 +22,9 @@
         'name': 'constant.boolean'
         'match': '(?<!\/)\\b(true|false|TRUE|FALSE|t|f|T|F)\\b(?!\/)'
     }
+    {
+        # units, this line is ugly!
+        'name': 'constant.numeric'
+        'match': '(?<!\/)\\b(millimeter|millimeter2|millimeter3|centimeter|centimeter2|centimeter3|meter|meter2|meter3|kilometer|kilometer2|kilometer3|parsec|micrometer|nanometer|angstrom|fermi|barn|millibarn|microbarn|nanobarn|picobarn|mm|um|nm|mm2|mm3|cm|cm2|cm3|liter|L|dL|cL|mL|m|m2|m3|km|km2|km3|pc|radian|milliradian|degree|steradian|rad|mrad|sr|deg|nanosecond|second|millisecond|microsecond|picosecond|hertz|kilohertz|megahertz|ns|s|ms|eplus|e_SI|coulomb|megaelectronvolt|electronvolt|kiloelectronvolt|gigaelectronvolt|teraelectronvolt|petaelectronvolt|joule|MeV|eV|keV|GeV|TeV|PeV|kilogram|gram|milligram|kg|g|mg|watt|newton|hep_pascal|bar|atmosphere|ampere|milliampere|microampere|nanoampere|megavolt|kilovolt|volt|ohm|farad|millifarad|microfarad|nanofarad|picofarad|weber|tesla|gauss|kilogauss|henry|kelvin|mole|becquerel|curie|gray|candela|lumen|lux|perCent|perThousand|perMillion)\\b(?!\/)'
+    }
 ]
