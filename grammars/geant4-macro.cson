@@ -20,6 +20,6 @@
     }
     {
         'name': 'constant.boolean'
-        'match': '\\b(true|false)\\b'
+        'match': '(?<!\/)\b(true|false|TRUE|FALSE|t|f|T|F)\b(?!\/)'
     }
 ]
