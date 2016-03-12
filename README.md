@@ -2,7 +2,7 @@
 
 Syntax highlighting and autocompletion for Geant4 macros.
 
-![Geant4 macro syntax highlighting](https://cloud.githubusercontent.com/assets/2887977/13701435/36f50f72-e788-11e5-979d-4b54cb99715c.png)
+![Geant4 macro syntax highlighting and autocompletion](https://cloud.githubusercontent.com/assets/2887977/13725234/e78cd464-e89b-11e5-8aea-eb46264e2a2d.gif)
 
 How to get it:
 
