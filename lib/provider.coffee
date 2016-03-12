@@ -1,7 +1,8 @@
 fs = require 'fs'
 path = require 'path'
 endOfCommand = /\/$|\/[a-zA-Z0-9]+$/
-wholeCommand = /\/[a-zA-Z0-9\/]+/
+wholeCommand = /^\/[a-zA-Z0-9\/]+/
+unit = /\ [a-zA-Z0-9]+$/
 
 module.exports =
   selector: '.text.geant4-macro'
@@ -11,6 +12,8 @@ module.exports =
     prefix = @getPrefix(editor, bufferPosition)
     if @isCommand
       suggestions = @getCommandCompletions({editor, bufferPosition}, prefix)
+    if @isUnit
+      suggestions = @getUnitCompletions(prefix)
     else
       suggestions = null
     suggestions
@@ -21,25 +24,38 @@ module.exports =
     if line.match(endOfCommand) != null
       @isCommand = true
       line.match(endOfCommand)[0].split('/')[1]
+    else if line.match(unit) != null
+      @isUnit = true
+      line.match(unit)[0].split(' ')[1]
     else
       ''
 
   resetMatches: ->
     @isCommand = false
+    @isUnit = false
+
+  getUnitCompletions: (prefix) ->
+    suggestions = []
+    for value in @unitCompletions["units"]
+      if equalStringStarts(prefix, value) and (prefix != value)
+        suggestion =
+          text: value
+          type: "constant"
+        suggestions.push(suggestion)
+    suggestions
 
   getCommandCompletions: ({editor, bufferPosition}, prefix) ->
     suggestions = []
     line = editor.getTextInRange([[bufferPosition.row, 0], bufferPosition])
-    try
-      line = line.match(wholeCommand)[0]
-      prev = line.split('/')
-      prev = prev[1..prev.length-2]
-      n = prev.length
-      thisLevel = @completions
-      for p in prev
-        thisLevel = thisLevel[p]
-    catch error
-      thisLevel = @completions
+    line = line.match(wholeCommand)[0]
+    prev = line.split('/')
+    prev = prev[1..prev.length-2]
+    n = prev.length
+    thisLevel = @commandCompletions
+    for p in prev
+      thisLevel = thisLevel[p]
+      if thisLevel == undefined
+        return suggestions
 
     values = Object.keys(thisLevel)
     for value in values
@@ -53,12 +69,22 @@ module.exports =
           type: 'value'
           description: desc
         suggestions.push(suggestion)
-    suggestions
+    return suggestions
 
   loadCompletions: ->
-    @completions = {}
+    @loadCommandCompletions()
+    @loadUnitCompletions()
+
+  loadCommandCompletions: ->
+    @commandCompletions = {}
     fs.readFile path.resolve(__dirname, '..', 'completions.json'), (error, content) =>
-      @completions = JSON.parse(content) unless error?
+      @commandCompletions = JSON.parse(content) unless error?
+      return
+
+  loadUnitCompletions: ->
+    @unitCompletions = {}
+    fs.readFile path.resolve(__dirname, '..', 'units.json'), (error, content) =>
+      @unitCompletions = JSON.parse(content) unless error?
       return
 
 equalStringStarts = (str1, str2) ->
