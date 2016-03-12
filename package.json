@@ -2,7 +2,7 @@
   "name": "language-geant4-macro",
   "author": "Nathanael Lampe <nathanael@natlampe.com>",
   "main": "./lib/main",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Syntax highlighting for Geant4 macros",
   "keywords": [
     "geant4",
@@ -17,7 +17,9 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "activationHooks": ["language-geant4-macro:grammar-used"],
+  "activationHooks": [
+    "language-geant4-macro:grammar-used"
+  ],
   "dependencies": {},
   "providedServices": {
     "autocomplete.provider": {
