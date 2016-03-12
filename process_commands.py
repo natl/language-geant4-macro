@@ -85,3 +85,7 @@ def to_json():
     outfile.write(json.dumps(a, sort_keys=True, indent=4))
     outfile.close()
     return None
+
+
+if __name__ == "__main__":
+    to_json()
