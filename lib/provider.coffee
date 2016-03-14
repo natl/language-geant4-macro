@@ -70,6 +70,9 @@ module.exports =
         try
           desc = thisLevel[value]['guidance']
           type = 'function'
+          if desc == undefined
+              type = 'class'
+              desc = ''
         catch error
           desc = ''
           type = 'class'
