@@ -1,3 +1,5 @@
+## 1.0.0 - First major release (syntax and autocompletion work)
+
 12-MAR-2016: Finished autocompletion
 
 11-MAR-2016: Added screenshot, fixed true/false regex
