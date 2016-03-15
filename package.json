@@ -2,7 +2,7 @@
   "name": "language-geant4-macro",
   "author": "Nathanael Lampe <nathanael@natlampe.com>",
   "main": "./lib/main",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Syntax highlighting for Geant4 macros",
   "keywords": [
     "geant4",
