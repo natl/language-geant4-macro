@@ -52,7 +52,10 @@ def read_command_file():
             inGuidance = False
         else:
             if inGuidance is True:
-                d[current_command]["guidance"] += line
+                if d[current_command]["guidance"] == "":
+                    d[current_command]["guidance"] += line
+                else:
+                    d[current_command]["guidance"] += "\n" + line
     f.close()
     return d
 

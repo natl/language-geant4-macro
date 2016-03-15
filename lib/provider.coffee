@@ -1,7 +1,7 @@
 fs = require 'fs'
 path = require 'path'
 endOfCommand = /\/$|\/[a-zA-Z0-9]+$/
-wholeCommand = /^\/[a-zA-Z0-9\/]+/
+wholeCommand = /^\/[a-zA-Z0-9\/]*$/
 unit = /\ [a-zA-Z0-9]+$/
 
 module.exports =
@@ -10,10 +10,10 @@ module.exports =
   getSuggestions: ({editor, bufferPosition}) ->
     suggestions = null
     prefix = @getPrefix(editor, bufferPosition)
-    if @isCommand
+    if @isCommand is true
       suggestions = @getCommandCompletions({editor, bufferPosition}, prefix)
-    if @isUnit
-      suggestions = @getUnitCompletions(prefix)
+    else if @isUnit is true
+      suggestions = @getConstCompletions(prefix)
     else
       suggestions = null
     suggestions
@@ -34,13 +34,20 @@ module.exports =
     @isCommand = false
     @isUnit = false
 
-  getUnitCompletions: (prefix) ->
+  getConstCompletions: (prefix) ->
     suggestions = []
-    for value in @unitCompletions["units"]
+    for value in @constantCompletions["units"]
       if equalStringStarts(prefix, value) and (prefix != value)
         suggestion =
           text: value
           type: "constant"
+        suggestions.push(suggestion)
+
+    for value in @constantCompletions["bool"]
+      if equalStringStarts(prefix, value) and (prefix != value)
+        suggestion =
+          text: value
+          type: "keyword"
         suggestions.push(suggestion)
     suggestions
 
@@ -58,15 +65,20 @@ module.exports =
         return suggestions
 
     values = Object.keys(thisLevel)
-    for value in values
-      if validPrefix(prefix, value) and (equalStringStarts(prefix, value) or (prefix == ""))
+    for value in values when validPrefix(prefix, value)
+      if (equalStringStarts(prefix, value) or (prefix == ""))
         try
           desc = thisLevel[value]['guidance']
+          type = 'function'
+          if desc == undefined
+              type = 'class'
+              desc = ''
         catch error
-          desc = 'No guidance'
+          desc = ''
+          type = 'class'
         suggestion =
           text: value
-          type: 'value'
+          type: type
           description: desc
         suggestions.push(suggestion)
     return suggestions
@@ -82,9 +94,9 @@ module.exports =
       return
 
   loadUnitCompletions: ->
-    @unitCompletions = {}
-    fs.readFile path.resolve(__dirname, '..', 'units.json'), (error, content) =>
-      @unitCompletions = JSON.parse(content) unless error?
+    @constantCompletions = {}
+    fs.readFile path.resolve(__dirname, '..', 'constants.json'), (error, content) =>
+      @constantCompletions = JSON.parse(content) unless error?
       return
 
 equalStringStarts = (str1, str2) ->
@@ -93,10 +105,10 @@ equalStringStarts = (str1, str2) ->
       return false
   return true
 
-validPrefix = (str1, value) ->
-  isGuidance = (str1 == "guidance")
-  isParams = (str1 == "params")
-  isValue = (str1 == value)
+validPrefix = (prefix, value) ->
+  isGuidance = (prefix == "guidance")
+  isParams = (prefix == "params")
+  isValue = (prefix == value)
   if isGuidance or isParams or isValue
     return false
   else
