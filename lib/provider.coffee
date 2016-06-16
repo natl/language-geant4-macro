@@ -1,5 +1,6 @@
 fs = require 'fs'
 path = require 'path'
+
 endOfCommand = /\/$|\/[a-zA-Z0-9]+$/
 wholeCommand = /^\/[a-zA-Z0-9\/]*$/
 unit = /\ [a-zA-Z0-9]+$/
@@ -21,7 +22,10 @@ module.exports =
   getPrefix: (editor, bufferPosition) ->
     @resetMatches()
     line = editor.getTextInRange([[bufferPosition.row, 0], bufferPosition])
-    if line.match(endOfCommand) != null
+    spl = line.split(' ')
+    line = spl[spl.length - 1]
+
+    if line.match(endOfCommand) != null and line.match(/^\//) != null
       @isCommand = true
       line.match(endOfCommand)[0].split('/')[1]
     else if line.match(unit) != null
@@ -54,6 +58,8 @@ module.exports =
   getCommandCompletions: ({editor, bufferPosition}, prefix) ->
     suggestions = []
     line = editor.getTextInRange([[bufferPosition.row, 0], bufferPosition])
+    spl = line.split(' ')
+    line = spl[spl.length - 1]  # Seperate at spaces
     line = line.match(wholeCommand)[0]
     prev = line.split('/')
     prev = prev[1..prev.length-2]
@@ -71,8 +77,8 @@ module.exports =
           desc = thisLevel[value]['guidance']
           type = 'function'
           if desc == undefined
-              type = 'class'
-              desc = ''
+            type = 'class'
+            desc = ''
         catch error
           desc = ''
           type = 'class'
