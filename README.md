@@ -17,8 +17,14 @@ This is an unofficial user project.
 *Customising the command list*
 
 To rebuild the command dictionary, you can replace G4command.txt with your own
-file made by dumping all the Geant4 UI commands within the scope. Then,
-run:
+file made by dumping all the Geant4 UI commands within the scope, which you do by
+running this command:
+
+```
+/control/manual /
+```
+
+Then, run (in the package directory):
 
 ```
 python process_commands.py
