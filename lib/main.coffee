@@ -1,4 +1,5 @@
 provider = require './provider'
+tooltips = require './tooltips'
 
 module.exports =
   activate: ->
