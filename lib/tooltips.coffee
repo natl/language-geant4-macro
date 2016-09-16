@@ -1,17 +1,23 @@
-{CompositeDisposable} = require 'atom'
+fs = require 'fs'
+path = require 'path'
+$ = require 'jquery'
 
-module.exports =
+module.exports=
   selector: '.text.geant4-macro'
-  subscriptions: new CompositeDisposable
   theTooltip: null
+  subscription: null
 
-  activate: =>
+  initialize:  ->
+    console.log("Activating Tooltips")
+    # First, load in the command completions (runs asynchronously)
     @commandCompletions = {}
     fs.readFile path.resolve(__dirname, '..',
     'completions.json'), (error, content) =>
       @commandCompletions = JSON.parse(content) unless error?
-    # @subscriptions add # add a watcher for text changes to get new class occurrences
-    return
+
+    # Second, run the task to attach event listeners
+    `$('body').on('hover', 'support', function () {console.log("bam");});`
+
 
   tooltipCreate: (element, command_chain) =>
     @tooltipDestroy()
@@ -30,5 +36,5 @@ module.exports =
   tooltipDestroy: =>
     @theTooltip.dispose() if (@theTooltip)?
 
-  deactivate: =>
-    @subscriptions.dispose()
+  close: =>
+    @subscription.dispose()
