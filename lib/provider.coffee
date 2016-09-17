@@ -71,7 +71,7 @@ module.exports =
         return suggestions
 
     values = Object.keys(thisLevel)
-    for value in values when validPrefix(prefix, value)
+    for value in values when isValidPrefixOrValue(prefix, value)
       if (equalStringStarts(prefix, value) or (prefix == ""))
         try
           desc = thisLevel[value]['guidance']
@@ -111,9 +111,9 @@ equalStringStarts = (str1, str2) ->
       return false
   return true
 
-validPrefix = (prefix, value) ->
-  isGuidance = (prefix == "guidance")
-  isParams = (prefix == "params")
+isValidPrefixOrValue = (prefix, value) ->
+  isGuidance = (prefix == "guidance") || (value == "guidance")
+  isParams = (prefix == "params") || (value == "params")
   isValue = (prefix == value)
   if isGuidance or isParams or isValue
     return false
