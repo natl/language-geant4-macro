@@ -21,18 +21,6 @@ class Tooltips
     atom.views.getView(atom.workspace).addEventListener 'mousemove', (evt) =>
       @mouseMove(evt)
 
-    # atom.views.getView(atom.workspace).addEventListener 'click', (evt) ->
-    #   isScope = (evt.path[1].className == @scopeName)
-    #   isFunction = (evt.path[0].className == "support function")
-    #   console.log(evt.path)
-    #   console.log(isScope)
-    #   console.log(@scopeName)
-    #   console.log(evt.path[1].className)
-    #   if isScope && isFunction
-    #     @tooltipCreate(path[1])
-    #   else if theTooltip?
-    #     @tooltipDestroy()
-
   mouseMove: (evt) =>
     isScope = (evt.path[1].className == @scopeName)
     isFunction = (evt.path[0].className == "support function")
@@ -64,16 +52,15 @@ class Tooltips
     if dictionary.guidance != undefined
       text = dictionary.guidance
       if dictionary.params.length > 0
-        text = text + "<br>Parameter, omitable, type, default<br>"
+        text = text + "<ol>"
         for param in dictionary.params
-          text = text + param.name if param.name?
-          text = text + ","
-          text = text + param.omit if param.name?
-          text = text + ","
-          text = text + param.type if param.name?
-          text = text + ","
-          text = text + param.default if param.name?
-          text = text + "<br>"
+          text = text + "<li>"
+          text = text + param.name + " " if param.name?
+          text = text + "type: " + param.type + " " if param.type?
+          text = text + "default: " + param.default + " " if param.default?
+          text = text + "(optional)" if param.omit == "True"
+          text = text + "</li>"
+        text = text + "</ol>"
       console.log(text)
       @theTooltip = atom.tooltips.add(evt.path[0],
         {title: text, trigger: "manual", placement: "bottom",
