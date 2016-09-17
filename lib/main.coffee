@@ -9,6 +9,3 @@ module.exports =
     @tooltips = new Tooltips()
 
   getProvider: -> provider
-
-  deactivite: ->
-    @tooltips.close()

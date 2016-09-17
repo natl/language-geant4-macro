@@ -25,7 +25,7 @@ class Tooltips
     isScope = (evt.path[1].className == @scopeName)
     isFunction = (evt.path[0].className == "support function")
     if isScope && isFunction
-      @tooltipCreate(evt)
+      @tooltipCreate(evt) if !(@theTooltip?)
     else if @theTooltip?
       @tooltipDestroy()
 
@@ -71,10 +71,6 @@ class Tooltips
 
   tooltipDestroy: =>
     @theTooltip.dispose() if (@theTooltip)?
-
-  close: =>
-    @subscription.dispose()
-    @hoverEvent.destroy()
-
+    @theTooltip = null
 
 module.exports = Tooltips
