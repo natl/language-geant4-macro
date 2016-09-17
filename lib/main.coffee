@@ -1,12 +1,14 @@
 provider = require './provider'
-tooltips = require './tooltips'
+Tooltips = require './tooltips'
 
 module.exports =
+  tooltips: null
+
   activate: ->
     provider.loadCompletions()
-    tooltips.initialize()
+    @tooltips = new Tooltips()
 
   getProvider: -> provider
 
   deactivite: ->
-    tooltips.close()
+    @tooltips.close()

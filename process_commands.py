@@ -71,10 +71,9 @@ def recurse_dictionary(d):
 def to_json():
     outfile = open("completions.json", "w")
     a = read_command_file()
-    oldlen = 0
-    while oldlen != len(a):
-        oldlen = len(a)
+    while True in [(r"/" in key) for key in a.keys()]:
         a = recurse_dictionary(a)
+        print([(r"/" in key) for key in a.keys()])
     outfile.write(json.dumps(a, sort_keys=True, indent=4))
     outfile.close()
     return None

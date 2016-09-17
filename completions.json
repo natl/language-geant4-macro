@@ -771,333 +771,6 @@
                 ]
             }
         },
-        "ntuple": {
-            "setActivation": {
-                "guidance": "Set activation for the ntuple of given id",
-                "params": [
-                    {
-                        "name": "NtupleId",
-                        "omit": "False",
-                        "type": "i"
-                    },
-                    {
-                        "default": "none",
-                        "name": "NtupleActivation",
-                        "omit": "True",
-                        "type": "s"
-                    }
-                ]
-            },
-            "setActivationToAll": {
-                "guidance": "Set activation to all ntuples",
-                "params": [
-                    {
-                        "name": "AllNtupleActivation",
-                        "omit": "False",
-                        "type": "b"
-                    }
-                ]
-            }
-        },
-        "p1": {
-            "create": {
-                "guidance": "Create 1D profile",
-                "params": [
-                    {
-                        "name": "name",
-                        "omit": "False",
-                        "type": "s"
-                    },
-                    {
-                        "name": "title",
-                        "omit": "False",
-                        "type": "s"
-                    },
-                    {
-                        "default": "100",
-                        "name": "xnbins0",
-                        "omit": "True",
-                        "type": "i"
-                    },
-                    {
-                        "default": "0",
-                        "name": "xvalMin0",
-                        "omit": "True",
-                        "type": "d"
-                    },
-                    {
-                        "default": "1",
-                        "name": "xvalMax0",
-                        "omit": "True",
-                        "type": "d"
-                    },
-                    {
-                        "default": "none",
-                        "name": "xvalUnit0",
-                        "omit": "True",
-                        "type": "s"
-                    },
-                    {
-                        "default": "none",
-                        "name": "xvalFcn0",
-                        "omit": "True",
-                        "type": "s"
-                    },
-                    {
-                        "default": "linear",
-                        "name": "xvalBinScheme0",
-                        "omit": "True",
-                        "type": "s"
-                    },
-                    {
-                        "default": "0",
-                        "name": "yvalMin0",
-                        "omit": "True",
-                        "type": "d"
-                    },
-                    {
-                        "default": "1",
-                        "name": "yvalMax0",
-                        "omit": "True",
-                        "type": "d"
-                    },
-                    {
-                        "default": "none",
-                        "name": "yvalUnit0",
-                        "omit": "True",
-                        "type": "s"
-                    },
-                    {
-                        "default": "none",
-                        "name": "yvalFcn0",
-                        "omit": "True",
-                        "type": "s"
-                    }
-                ]
-            },
-            "set": {
-                "guidance": "Set parameters for the 1D profile of given id:\nnbins; xvalMin; xvalMax; xunit; xfunction; xbinScheme\nyvalMin; yvalMax; yunit; yfunction",
-                "params": [
-                    {
-                        "name": "id",
-                        "omit": "False",
-                        "type": "i"
-                    },
-                    {
-                        "name": "xnbins",
-                        "omit": "False",
-                        "type": "i"
-                    },
-                    {
-                        "name": "xvalMin",
-                        "omit": "False",
-                        "type": "d"
-                    },
-                    {
-                        "name": "xvalMax",
-                        "omit": "False",
-                        "type": "d"
-                    },
-                    {
-                        "default": "none",
-                        "name": "xvalUnit",
-                        "omit": "False",
-                        "type": "s"
-                    },
-                    {
-                        "default": "none",
-                        "name": "xvalFcn",
-                        "omit": "False",
-                        "type": "s"
-                    },
-                    {
-                        "default": "linear",
-                        "name": "xvalBinScheme",
-                        "omit": "True",
-                        "type": "s"
-                    },
-                    {
-                        "name": "yvalMin",
-                        "omit": "False",
-                        "type": "d"
-                    },
-                    {
-                        "name": "yvalMax",
-                        "omit": "False",
-                        "type": "d"
-                    },
-                    {
-                        "default": "none",
-                        "name": "yvalUnit",
-                        "omit": "True",
-                        "type": "s"
-                    },
-                    {
-                        "default": "none",
-                        "name": "yvalFcn",
-                        "omit": "False",
-                        "type": "s"
-                    }
-                ]
-            },
-            "setActivation": {
-                "guidance": "Set activation for the 1D profile of given id",
-                "params": [
-                    {
-                        "name": "id",
-                        "omit": "False",
-                        "type": "i"
-                    },
-                    {
-                        "default": "none",
-                        "name": "hnActivation",
-                        "omit": "True",
-                        "type": "s"
-                    }
-                ]
-            },
-            "setActivationToAll": {
-                "guidance": "Set activation to all 1D profiles",
-                "params": [
-                    {
-                        "name": "Activation",
-                        "omit": "False",
-                        "type": "b"
-                    }
-                ]
-            },
-            "setAscii": {
-                "guidance": "Print 1D profile of given id on ascii file.\nRange of parameters : id>=0",
-                "params": [
-                    {
-                        "name": "id",
-                        "omit": "False",
-                        "type": "i"
-                    }
-                ]
-            },
-            "setPlotting": {
-                "guidance": "(In)Activate batch plotting of the 1D profile of given id",
-                "params": [
-                    {
-                        "name": "id",
-                        "omit": "False",
-                        "type": "i"
-                    },
-                    {
-                        "default": "none",
-                        "name": "hnPlotting",
-                        "omit": "True",
-                        "type": "s"
-                    }
-                ]
-            },
-            "setPlottingToAll": {
-                "guidance": "(In)Activate batch plotting of all 1D profiles",
-                "params": [
-                    {
-                        "name": "Plotting",
-                        "omit": "False",
-                        "type": "b"
-                    }
-                ]
-            },
-            "setTitle": {
-                "guidance": "Set title for the 1D profile of given id",
-                "params": [
-                    {
-                        "name": "id",
-                        "omit": "False",
-                        "type": "i"
-                    },
-                    {
-                        "default": "none",
-                        "name": "title",
-                        "omit": "True",
-                        "type": "s"
-                    }
-                ]
-            },
-            "setX": {
-                "guidance": "Set parameters for the 1D profile of given id:\nnxbins; xvalMin; xvalMax; xunit; xfunction; xbinScheme",
-                "params": [
-                    {
-                        "name": "id",
-                        "omit": "False",
-                        "type": "i"
-                    },
-                    {
-                        "name": "nbins",
-                        "omit": "False",
-                        "type": "i"
-                    },
-                    {
-                        "name": "valMin",
-                        "omit": "False",
-                        "type": "d"
-                    },
-                    {
-                        "name": "valMax",
-                        "omit": "False",
-                        "type": "d"
-                    },
-                    {
-                        "default": "none",
-                        "name": "valUnit",
-                        "omit": "True",
-                        "type": "s"
-                    },
-                    {
-                        "default": "none",
-                        "name": "valFcn",
-                        "omit": "True",
-                        "type": "s"
-                    },
-                    {
-                        "default": "linear",
-                        "name": "valBinScheme",
-                        "omit": "True",
-                        "type": "s"
-                    }
-                ]
-            },
-            "setXaxis": {
-                "guidance": "Set x-axis title for the 1D profile of given id",
-                "params": [
-                    {
-                        "name": "id",
-                        "omit": "False",
-                        "type": "i"
-                    },
-                    {
-                        "default": "none",
-                        "name": "axis",
-                        "omit": "True",
-                        "type": "s"
-                    }
-                ]
-            },
-            "setY": {
-                "guidance": "Set parameters for the 1D profile of #id:\nyvalMin; yvalMax; yunit; yfunction",
-                "params": []
-            },
-            "setYaxis": {
-                "guidance": "Set y-axis title for the 1D profile of given id",
-                "params": [
-                    {
-                        "name": "id",
-                        "omit": "False",
-                        "type": "i"
-                    },
-                    {
-                        "default": "none",
-                        "name": "axis",
-                        "omit": "True",
-                        "type": "s"
-                    }
-                ]
-            }
-        },
         "p2": {
             "create": {
                 "guidance": "Create 2D profile",
@@ -1477,48 +1150,6 @@
                         "default": "none",
                         "name": "axis",
                         "omit": "True",
-                        "type": "s"
-                    }
-                ]
-            }
-        },
-        "plot": {
-            "setDimensions": {
-                "guidance": "Set the plotter window size (width and height) in pixels.",
-                "params": [
-                    {
-                        "name": "width",
-                        "omit": "False",
-                        "type": "i"
-                    },
-                    {
-                        "name": "height",
-                        "omit": "False",
-                        "type": "i"
-                    }
-                ]
-            },
-            "setLayout": {
-                "guidance": "Set page layout (number of columns and rows per page).\nSuported layouts:\ncolumns = 1 .. 2\nrows    = 1 .. 3 and  >= columns",
-                "params": [
-                    {
-                        "name": "columns",
-                        "omit": "False",
-                        "type": "i"
-                    },
-                    {
-                        "name": "rows",
-                        "omit": "False",
-                        "type": "i"
-                    }
-                ]
-            },
-            "setStyle": {
-                "guidance": "Only one plotting style is available in low resolution:\ninlib_default: PAW style with low resolution fonts",
-                "params": [
-                    {
-                        "name": "Style",
-                        "omit": "False",
                         "type": "s"
                     }
                 ]
@@ -2251,6 +1882,33 @@
             "guidance": "Store the current event to G4Run object instead of deleting it at the end of event.\nStored event is available through G4Run until the begining of next run.\nGiven the potential large memory size of G4Event and its datamember objects stored in G4Event,\nthe user must be careful and responsible for not to store too many G4Event objects.",
             "params": []
         },
+        "stack": {
+            "clear": {
+                "guidance": "Clear stacked tracks.\n2 : clear all tracks in all stacks\n1 : clear tracks in the urgent and waiting stacks\n0 : clear tracks in the waiting stack (default)\n-1 : clear tracks in the urgent stack\n-2 : clear tracks in the postponed stack\nRange of parameters : level>=-2&&level<=2",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "level",
+                        "omit": "True",
+                        "type": "i"
+                    }
+                ]
+            },
+            "status": {
+                "guidance": "List current status of the stack.",
+                "params": []
+            },
+            "verbose": {
+                "guidance": "Set verbose level for G4StackManager\n0 : Silence (default)\n1 : Minimum statistics\n2 : Detailed reports\nNote - this value is overwritten by /event/verbose command.",
+                "params": [
+                    {
+                        "name": "",
+                        "omit": "False",
+                        "type": "i"
+                    }
+                ]
+            }
+        },
         "verbose": {
             "guidance": "Set Verbose level of event management category.\n0 : Silent\n1 : Stacking information\n2 : More...\nRange of parameters : level>=0",
             "params": [
@@ -2385,6 +2043,222 @@
         "List": {
             "guidance": "List available particles.\nInvoke G4ParticleTable.",
             "params": []
+        },
+        "ang": {
+            "focuspoint": {
+                "guidance": "Set the focusing point for the beam",
+                "params": [
+                    {
+                        "name": "x",
+                        "omit": "False",
+                        "type": "d"
+                    },
+                    {
+                        "name": "y",
+                        "omit": "False",
+                        "type": "d"
+                    },
+                    {
+                        "name": "z",
+                        "omit": "False",
+                        "type": "d"
+                    },
+                    {
+                        "default": "cm",
+                        "name": "Unit",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "maxphi": {
+                "guidance": "Set maximum phi",
+                "params": [
+                    {
+                        "default": "3.14159",
+                        "name": "MaxPhi",
+                        "omit": "False",
+                        "type": "d"
+                    },
+                    {
+                        "default": "rad",
+                        "name": "Unit",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "maxtheta": {
+                "guidance": "Set maximum theta",
+                "params": [
+                    {
+                        "default": "3.14159",
+                        "name": "MaxTheta",
+                        "omit": "False",
+                        "type": "d"
+                    },
+                    {
+                        "default": "rad",
+                        "name": "Unit",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "minphi": {
+                "guidance": "Set minimum phi",
+                "params": [
+                    {
+                        "name": "MinPhi",
+                        "omit": "False",
+                        "type": "d"
+                    },
+                    {
+                        "default": "rad",
+                        "name": "Unit",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "mintheta": {
+                "guidance": "Set minimum theta",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "MinTheta",
+                        "omit": "False",
+                        "type": "d"
+                    },
+                    {
+                        "default": "rad",
+                        "name": "Unit",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "rot1": {
+                "guidance": "Sets the 1st vector for angular distribution rotation matrix\nNeed not be a unit vector\nRange of parameters : AR1x != 0 || AR1y != 0 || AR1z != 0",
+                "params": [
+                    {
+                        "name": "AR1x",
+                        "omit": "False",
+                        "type": "d"
+                    },
+                    {
+                        "name": "AR1y",
+                        "omit": "False",
+                        "type": "d"
+                    },
+                    {
+                        "name": "AR1z",
+                        "omit": "False",
+                        "type": "d"
+                    }
+                ]
+            },
+            "rot2": {
+                "guidance": "Sets the 2nd vector for angular distribution rotation matrix\nNeed not be a unit vector\nRange of parameters : AR2x != 0 || AR2y != 0 || AR2z != 0",
+                "params": [
+                    {
+                        "name": "AR2x",
+                        "omit": "False",
+                        "type": "d"
+                    },
+                    {
+                        "name": "AR2y",
+                        "omit": "False",
+                        "type": "d"
+                    },
+                    {
+                        "name": "AR2z",
+                        "omit": "False",
+                        "type": "d"
+                    }
+                ]
+            },
+            "sigma_r": {
+                "guidance": "Set standard deviation in direction for 1D beam.",
+                "params": [
+                    {
+                        "name": "Sigmara",
+                        "omit": "False",
+                        "type": "d"
+                    },
+                    {
+                        "default": "rad",
+                        "name": "Unit",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "sigma_x": {
+                "guidance": "Set standard deviation in direction in x-direc. for 2D beam",
+                "params": [
+                    {
+                        "name": "Sigmaxa",
+                        "omit": "False",
+                        "type": "d"
+                    },
+                    {
+                        "default": "rad",
+                        "name": "Unit",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "sigma_y": {
+                "guidance": "Set standard deviation in direction in y-direc. for 2D beam",
+                "params": [
+                    {
+                        "name": "Sigmaya",
+                        "omit": "False",
+                        "type": "d"
+                    },
+                    {
+                        "default": "rad",
+                        "name": "Unit",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "surfnorm": {
+                "guidance": "Makes a user-defined distribution with respect to surface normals rather than x,y,z axes.\nDefault is false",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "surfnorm",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            },
+            "type": {
+                "guidance": "Sets angular source distribution type\nPossible variables are: iso, cos, planar, beam1d, beam2d, focused or user",
+                "params": [
+                    {
+                        "default": "iso",
+                        "name": "AngDis",
+                        "omit": "False",
+                        "type": "s"
+                    }
+                ]
+            },
+            "user_coor": {
+                "guidance": "true for using user defined angular co-ordinates\nDefault is false",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "useuserangaxis",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            }
         },
         "direction": {
             "guidance": "Set momentum direction.\nDirection needs not to be a unit vector.\nAngular distribution type is set to planar.\nRange of parameters : Px != 0 || Py != 0 || Pz != 0",
@@ -3587,6 +3461,41 @@
                 ]
             }
         },
+        "nist": {
+            "listMaterials": {
+                "guidance": "Materials in Geant4 dataBase.\nsimple - simple NIST materials.\ncompound - compound NIST materials.\nhep - HEP materials.\nbio - biomedical materials.\nall - list of all Geant4 materials.",
+                "params": [
+                    {
+                        "default": "all",
+                        "name": "matlist",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "printElement": {
+                "guidance": "print element(s) in dataBase.\nsymbol = element.\nall    = all elements.",
+                "params": [
+                    {
+                        "default": "all",
+                        "name": "symbol",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "printElementZ": {
+                "guidance": "print element Z in dataBase.\n0 = all elements.\nRange of parameters : 0<=Z && Z<108",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "Z",
+                        "omit": "True",
+                        "type": "i"
+                    }
+                ]
+            }
+        },
         "verbose": {
             "guidance": "Set verbose level.",
             "params": [
@@ -3629,82 +3538,52 @@
                 }
             ]
         },
-        "manage": {
-            "nuclideTable": {
-                "level_tolerance": {
-                    "guidance": "Set tolerance in level seaching.\nUnit of the energy can be :\nMeV, keV, eV (default)\nRange of parameters : lTolerance >0.0",
-                    "params": [
-                        {
-                            "default": "1",
-                            "name": "lTolerance",
-                            "omit": "False",
-                            "type": "d"
-                        },
-                        {
-                            "default": "eV",
-                            "name": "Unit",
-                            "omit": "True",
-                            "type": "s"
-                        }
-                    ]
-                },
-                "min_halflife": {
-                    "guidance": "Set threshold of half-life.\nUnit of the time can be :\ns, ms, ns (default)\nRange of parameters : life >0.0",
-                    "params": [
-                        {
-                            "default": "1000",
-                            "name": "life",
-                            "omit": "False",
-                            "type": "d"
-                        },
-                        {
-                            "default": "ns",
-                            "name": "Unit",
-                            "omit": "True",
-                            "type": "s"
-                        }
-                    ]
-                }
-            }
-        },
-        "property": {
-            "dump": {
-                "guidance": "dump particle properties.",
-                "params": []
-            },
-            "lifetime": {
-                "guidance": "Set life time.\nUnit of the time can be :\ns, ms, ns (default)\nRange of parameters : life >0.0",
+        "process": {
+            "activate": {
+                "guidance": "Activate process\nActivate [process index]\nRange of parameters : index >=0",
                 "params": [
                     {
                         "default": "0",
-                        "name": "life",
+                        "name": "index",
                         "omit": "False",
-                        "type": "d"
-                    },
-                    {
-                        "default": "ns",
-                        "name": "Unit",
-                        "omit": "True",
-                        "type": "s"
+                        "type": "i"
                     }
                 ]
             },
-            "stable": {
-                "guidance": "Set stable flag.\nfalse: Unstable   true: Stable",
+            "dump": {
+                "guidance": "dump process manager or process information\ndump [process index]\nprocess index: -1 for process manager",
                 "params": [
                     {
-                        "name": "stable",
+                        "default": "-1",
+                        "name": "index",
+                        "omit": "True",
+                        "type": "i"
+                    }
+                ]
+            },
+            "inactivate": {
+                "guidance": "Inactivate process\ninactivate [process index]\nRange of parameters : index >=0",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "index",
                         "omit": "False",
-                        "type": "b"
+                        "type": "i"
                     }
                 ]
             },
             "verbose": {
-                "guidance": "Set Verbose level of particle property.\n0 : Silent (default)\n1 : Display warning messages\n2 : Display more\nRange of parameters : verbose_level >=0",
+                "guidance": "Set Verbose Level for Process or Process Manager\nVerbose [Verbose] [process index]\nprocess index: -1 for process manager",
                 "params": [
                     {
-                        "default": "0",
-                        "name": "verbose_level",
+                        "default": "1",
+                        "name": "Verbose",
+                        "omit": "True",
+                        "type": "i"
+                    },
+                    {
+                        "default": "-1",
+                        "name": "index",
                         "omit": "True",
                         "type": "i"
                     }
@@ -3810,6 +3689,556 @@
                     "type": "s"
                 }
             ]
+        },
+        "eLoss": {
+            "CSDARange": {
+                "guidance": "Enable/disable CSDA range calculation",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "range",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            },
+            "LPM": {
+                "guidance": "Enable/disable LPM effect calculation",
+                "params": [
+                    {
+                        "default": "1",
+                        "name": "lpm",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            },
+            "LambdaFactor": {
+                "guidance": "Set lambdaFactor parameter for integral option",
+                "params": [
+                    {
+                        "name": "Fl",
+                        "omit": "True",
+                        "type": "d"
+                    }
+                ]
+            },
+            "StepFunction": {
+                "guidance": "Set the energy loss step limitation parameters.\ndRoverR   : max Range variation per step\nfinalRange: range for final step",
+                "params": [
+                    {
+                        "name": "dRoverR",
+                        "omit": "False",
+                        "type": "d"
+                    },
+                    {
+                        "name": "finalRange",
+                        "omit": "False",
+                        "type": "d"
+                    },
+                    {
+                        "default": "mm",
+                        "name": "unit",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "UseAngularGenerator": {
+                "guidance": "Enable usage of angular generator",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "del",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            },
+            "binsDEDX": {
+                "guidance": "Set number of bins for EM tables",
+                "params": [
+                    {
+                        "default": "77",
+                        "name": "binsDEDX",
+                        "omit": "True",
+                        "type": "i"
+                    }
+                ]
+            },
+            "binsLambda": {
+                "guidance": "Set number of bins for EM tables",
+                "params": [
+                    {
+                        "default": "77",
+                        "name": "binsL",
+                        "omit": "True",
+                        "type": "i"
+                    }
+                ]
+            },
+            "binsPerDecade": {
+                "guidance": "Set number of bins per decade for EM tables",
+                "params": [
+                    {
+                        "default": "7",
+                        "name": "bins",
+                        "omit": "True",
+                        "type": "i"
+                    }
+                ]
+            },
+            "bremThreshold": {
+                "guidance": "Set bremsstrahlung energy threshold",
+                "params": [
+                    {
+                        "name": "emaxBrem",
+                        "omit": "True",
+                        "type": "d"
+                    },
+                    {
+                        "name": "Unit",
+                        "omit": "False",
+                        "type": "s"
+                    }
+                ]
+            },
+            "fluct": {
+                "guidance": "Enable/disable energy loss fluctuations.",
+                "params": [
+                    {
+                        "default": "1",
+                        "name": "choice",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            },
+            "integral": {
+                "guidance": "Switch true/false the integral option",
+                "params": [
+                    {
+                        "default": "1",
+                        "name": "integ",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            },
+            "linLossLimit": {
+                "guidance": "Set linearLossLimit parameter",
+                "params": [
+                    {
+                        "name": "linlim",
+                        "omit": "True",
+                        "type": "d"
+                    }
+                ]
+            },
+            "maxKinEnergy": {
+                "guidance": "Set the max kinetic energy for EM tables",
+                "params": [
+                    {
+                        "name": "emax",
+                        "omit": "True",
+                        "type": "d"
+                    },
+                    {
+                        "name": "Unit",
+                        "omit": "False",
+                        "type": "s"
+                    }
+                ]
+            },
+            "maxKinEnergyCSDA": {
+                "guidance": "Set the max kinetic energy for CSDA table",
+                "params": [
+                    {
+                        "name": "emaxCSDA",
+                        "omit": "True",
+                        "type": "d"
+                    },
+                    {
+                        "name": "Unit",
+                        "omit": "False",
+                        "type": "s"
+                    }
+                ]
+            },
+            "minKinEnergy": {
+                "guidance": "Set the min kinetic energy for EM tables",
+                "params": [
+                    {
+                        "name": "emin",
+                        "omit": "True",
+                        "type": "d"
+                    },
+                    {
+                        "name": "Unit",
+                        "omit": "False",
+                        "type": "s"
+                    }
+                ]
+            },
+            "minsubsec": {
+                "guidance": "Set the ratio subcut/cut",
+                "params": [
+                    {
+                        "name": "rcmin",
+                        "omit": "True",
+                        "type": "d"
+                    }
+                ]
+            },
+            "subsec": {
+                "guidance": "Switch true/false the subcutoff generation.",
+                "params": [
+                    {
+                        "default": "1",
+                        "name": "choice",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            },
+            "useCutAsFinalRange": {
+                "guidance": "Enable?disable use of cut in range as a final range",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "choice",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            },
+            "verbose": {
+                "guidance": "Set verbose level for EM physics",
+                "params": [
+                    {
+                        "default": "1",
+                        "name": "verb",
+                        "omit": "True",
+                        "type": "i"
+                    }
+                ]
+            }
+        },
+        "em": {
+            "AddDNARegion": {
+                "guidance": "Activate DNA in the G4Region.\nregName   : G4Region name\ndnaType   : opt0, opt1, opt2",
+                "params": [
+                    {
+                        "name": "regName",
+                        "omit": "False",
+                        "type": "s"
+                    },
+                    {
+                        "name": "type",
+                        "omit": "False",
+                        "type": "s"
+                    }
+                ]
+            },
+            "AddMicroElecRegion": {
+                "guidance": "Activate MicroElec model in the G4Region",
+                "params": [
+                    {
+                        "name": "MicroElec",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "AddPAIRegion": {
+                "guidance": "Activate PAI in the G4Region.\npartName  : particle name (default - all)\nregName   : G4Region name\npaiType   : PAI, PAIphoton",
+                "params": [
+                    {
+                        "name": "partName",
+                        "omit": "False",
+                        "type": "s"
+                    },
+                    {
+                        "name": "regName",
+                        "omit": "False",
+                        "type": "s"
+                    },
+                    {
+                        "name": "type",
+                        "omit": "False",
+                        "type": "s"
+                    }
+                ]
+            },
+            "applyCuts": {
+                "guidance": "Enable/disable applying cuts for gamma processes",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "apl",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            },
+            "auger": {
+                "guidance": "Enable/disable Auger electrons production",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "augerFlag",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            },
+            "augerCascade": {
+                "guidance": "Enable/disable simulation of cascade of Auger electrons",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "augerCascadeFlag",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            },
+            "deexcitation": {
+                "guidance": "Set deexcitation flags per G4Region.\nregName   : G4Region name\nflagFluo  : Fluorescence\nflagAuger : Auger\nflagPIXE  : PIXE",
+                "params": [
+                    {
+                        "name": "regName",
+                        "omit": "False",
+                        "type": "s"
+                    },
+                    {
+                        "name": "flagFluo",
+                        "omit": "False",
+                        "type": "s"
+                    },
+                    {
+                        "name": "flagAuger",
+                        "omit": "False",
+                        "type": "s"
+                    },
+                    {
+                        "name": "flagPIXE",
+                        "omit": "False",
+                        "type": "s"
+                    }
+                ]
+            },
+            "deexcitationIgnoreCut": {
+                "guidance": "Enable/Disable usage of cuts in de-excitation module",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "deexcut",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            },
+            "fluo": {
+                "guidance": "Enable/disable atomic deexcitation",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "fluoFlag",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            },
+            "fluoBearden": {
+                "guidance": "Enable/disable usage of Bearden fluorescence files",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "fluoBeardenFlag",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            },
+            "lowestElectronEnergy": {
+                "guidance": "Set the lowest kinetic energy for e+-",
+                "params": [
+                    {
+                        "name": "elow",
+                        "omit": "True",
+                        "type": "d"
+                    },
+                    {
+                        "name": "Unit",
+                        "omit": "False",
+                        "type": "s"
+                    }
+                ]
+            },
+            "lowestMuHadEnergy": {
+                "guidance": "Set the lowest kinetic energy for muons and hadrons",
+                "params": [
+                    {
+                        "name": "elowh",
+                        "omit": "True",
+                        "type": "d"
+                    },
+                    {
+                        "name": "Unit",
+                        "omit": "False",
+                        "type": "s"
+                    }
+                ]
+            },
+            "pixe": {
+                "guidance": "Enable/disable PIXE simulation",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "pixeFlag",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            },
+            "pixeElecXSmodel": {
+                "guidance": "The name of PIXE cross section for electron",
+                "params": [
+                    {
+                        "name": "pixeEXS",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "pixeXSmodel": {
+                "guidance": "The name of PIXE cross section",
+                "params": [
+                    {
+                        "name": "pixeXS",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "printParameters": {
+                "guidance": "Print all EM parameters.",
+                "params": []
+            },
+            "setBiasingFactor": {
+                "guidance": "Set factor for the process cross section.\nprocName   : process name\nprocFact   : factor\nflagFact   : flag to change weight",
+                "params": [
+                    {
+                        "name": "procName",
+                        "omit": "False",
+                        "type": "s"
+                    },
+                    {
+                        "name": "procFact",
+                        "omit": "False",
+                        "type": "d"
+                    },
+                    {
+                        "name": "flagFact",
+                        "omit": "False",
+                        "type": "s"
+                    }
+                ]
+            },
+            "setForcedInteraction": {
+                "guidance": "Set factor for the process cross section.\nprocNam    : process name\nregNam     : region name\ntlength    : fixed target length\ntflag      : flag to change weight",
+                "params": [
+                    {
+                        "name": "procNam",
+                        "omit": "False",
+                        "type": "s"
+                    },
+                    {
+                        "name": "regNam",
+                        "omit": "False",
+                        "type": "s"
+                    },
+                    {
+                        "name": "tlength",
+                        "omit": "False",
+                        "type": "d"
+                    },
+                    {
+                        "name": "unitT",
+                        "omit": "True",
+                        "type": "s"
+                    },
+                    {
+                        "name": "tflag",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "setSecBiasing": {
+                "guidance": "Set bremsstrahlung or delta-e- splitting/Russian roullette per region.\nbProcNam : process name\nbRegNam  : region name\nbFactor  : number of splitted gamma or probability of Russian roulette\nbEnergy  : max energy of a secondary for this biasing method\nunit of energy",
+                "params": [
+                    {
+                        "name": "bProcNam",
+                        "omit": "False",
+                        "type": "s"
+                    },
+                    {
+                        "name": "bRegNam",
+                        "omit": "False",
+                        "type": "s"
+                    },
+                    {
+                        "name": "bFactor",
+                        "omit": "False",
+                        "type": "d"
+                    },
+                    {
+                        "name": "bEnergy",
+                        "omit": "False",
+                        "type": "d"
+                    },
+                    {
+                        "name": "bUnit",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "spline": {
+                "guidance": "Enable/disable usage spline for Physics Vectors",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "spl",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            },
+            "verbose": {
+                "guidance": "Set verbose level for EM physics",
+                "params": [
+                    {
+                        "default": "1",
+                        "name": "verb1",
+                        "omit": "True",
+                        "type": "i"
+                    }
+                ]
+            },
+            "workerVerbose": {
+                "guidance": "Set worker verbose level for EM physics",
+                "params": [
+                    {
+                        "default": "1",
+                        "name": "verb2",
+                        "omit": "True",
+                        "type": "i"
+                    }
+                ]
+            }
         },
         "had": {
             "cascade": {
@@ -4119,6 +4548,141 @@
                 }
             ]
         },
+        "msc": {
+            "DisplacementBeyondSafety": {
+                "guidance": "Enable/disable displacement at geometry boundary",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "cat",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            },
+            "FactorForAngleLimit": {
+                "guidance": "Set factor for computation of a limit for -t (invariant trasfer)\nRange of parameters : Fact>0",
+                "params": [
+                    {
+                        "default": "1",
+                        "name": "Fact",
+                        "omit": "True",
+                        "type": "d"
+                    }
+                ]
+            },
+            "GeomFactor": {
+                "guidance": "Set GeomFactor parameter for msc processes\nRange of parameters : Fg>0",
+                "params": [
+                    {
+                        "default": "3.5",
+                        "name": "Fg",
+                        "omit": "True",
+                        "type": "d"
+                    }
+                ]
+            },
+            "LateralDisplacement": {
+                "guidance": "Enable/disable sampling of lateral displacement",
+                "params": [
+                    {
+                        "default": "1",
+                        "name": "lat",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            },
+            "MuHadLateralDisplacement": {
+                "guidance": "Enable/disable sampling of lateral displacement for muons and hadrons",
+                "params": [
+                    {
+                        "default": "1",
+                        "name": "mulat",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            },
+            "RangeFactor": {
+                "guidance": "Set RangeFactor for msc processes of e+-\nRange of parameters : Fr>0",
+                "params": [
+                    {
+                        "default": "0.04",
+                        "name": "Fr",
+                        "omit": "True",
+                        "type": "d"
+                    }
+                ]
+            },
+            "RangeFactorMuHad": {
+                "guidance": "Set RangeFactor for msc processes of muons/hadrons\nRange of parameters : Fr>0",
+                "params": [
+                    {
+                        "default": "0.2",
+                        "name": "Fr1",
+                        "omit": "True",
+                        "type": "d"
+                    }
+                ]
+            },
+            "Skin": {
+                "guidance": "Set skin parameter for msc processes",
+                "params": [
+                    {
+                        "name": "skin",
+                        "omit": "True",
+                        "type": "d"
+                    }
+                ]
+            },
+            "StepLimit": {
+                "guidance": "Set msc step limitation type",
+                "params": [
+                    {
+                        "name": "StepLim",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "StepLimitMuHad": {
+                "guidance": "Set msc step limitation type for muons/hadrons",
+                "params": [
+                    {
+                        "name": "StepLim1",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "ThetaLimit": {
+                "guidance": "Set the limit on the polar angle for msc and single scattering",
+                "params": [
+                    {
+                        "name": "theta",
+                        "omit": "True",
+                        "type": "d"
+                    },
+                    {
+                        "name": "Unit",
+                        "omit": "False",
+                        "type": "s"
+                    }
+                ]
+            },
+            "UseMottCorrection": {
+                "guidance": "Enable usage of Mott corrections for e- elastic scattering",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "mott",
+                        "omit": "True",
+                        "type": "b"
+                    }
+                ]
+            }
+        },
         "setVerbose": {
             "guidance": "Set verbose level for processes\nsetVerbose level [type or name]\nlevel: verbose level\nname : process name\ntype : process type\n[all] for all proceeses",
             "params": [
@@ -4359,6 +4923,113 @@
                 }
             ]
         },
+        "particle": {
+            "addProcManager": {
+                "guidance": "add process manager to specified particle type",
+                "params": [
+                    {
+                        "name": "particleType",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "applyCuts": {
+                "guidance": "Set applyCuts flag for a particle.\nSome EM processes which do not have infrared divergence\nmay generate gamma, e- and/or e+ with kinetic energies\nbelow the production threshold. By setting this flag,\nsuch secondaries below threshold are eliminated and\nkinetic energies of such secondaries are accumulated\nto the energy deposition of their mother.\nNote that 'applyCuts' makes sense only for gamma,\ne- and e+. If this command is issued for other particle,\na warning message is displayed and the command is\nignored.\nIf particle name is 'all', this command affects on\ngamma, e- and e+.",
+                "params": [
+                    {
+                        "default": "true",
+                        "name": "Flag",
+                        "omit": "True",
+                        "type": "s"
+                    },
+                    {
+                        "default": "all",
+                        "name": "Particle",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "buildPhysicsTable": {
+                "guidance": "build physics table of specified particle type",
+                "params": [
+                    {
+                        "name": "particleType",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "dumpCutValues": {
+                "guidance": "Dump a list of production threshold values in range and energy\nfor all registered material-cuts-couples.\nDumping a list takes place when you issue 'beamOn' and\nactual conversion tables from range to energy are available.\nIf you want a list 'immediately', use '/run/dumpRegion' for threshold\nlist given in gange only. Also, '/run/dumpCouples' gives you the\ncurrent list if you have already issued 'run/beamOn' at least once.",
+                "params": [
+                    {
+                        "default": "all",
+                        "name": "particle",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "dumpList": {
+                "guidance": "Dump List of particles in G4VUserPhysicsList.",
+                "params": []
+            },
+            "dumpOrderingParam": {
+                "guidance": "Dump a list of ordering parameter",
+                "params": [
+                    {
+                        "default": "-1",
+                        "name": "subtype",
+                        "omit": "True",
+                        "type": "i"
+                    }
+                ]
+            },
+            "retrievePhysicsTable": {
+                "guidance": "Retrieve Physics Table\nEnter directory name or OFF to switch off",
+                "params": [
+                    {
+                        "name": "dirName",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "setStoredInAscii": {
+                "guidance": "Switch on/off ascii mode in store/retreive Physics Table\nEnter 0(binary) or 1(ascii)\nRange of parameters : ascii ==0 || ascii ==1",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "ascii",
+                        "omit": "True",
+                        "type": "i"
+                    }
+                ]
+            },
+            "storePhysicsTable": {
+                "guidance": "Store Physics Table\nEnter directory name",
+                "params": [
+                    {
+                        "name": "dirName",
+                        "omit": "True",
+                        "type": "s"
+                    }
+                ]
+            },
+            "verbose": {
+                "guidance": "Set the Verbose level of G4VUserPhysicsList.\n0 : Silent (default)\n1 : Display warning messages\n2 : Display more\nRange of parameters : level >=0 && level <=3",
+                "params": [
+                    {
+                        "default": "0",
+                        "name": "level",
+                        "omit": "True",
+                        "type": "i"
+                    }
+                ]
+            }
+        },
         "physicsModified": {
             "guidance": "Force all physics tables recalculated again.\nThis command must be applied\nif physics process has been modified after the\nfirst initialization (or BeamOn).",
             "params": []
@@ -4523,16 +5194,18 @@
     },
     "vis": {
         "ASCIITree": {
-            "verbose": {
-                "guidance": "<  10: - does not print daughters of repeated placements, does not repeat replicas.\n>= 10: prints all physical volumes.\nThe level of detail is given by verbosity%10:\nfor each volume:\n>=  0: physical volume name.\n>=  1: logical volume name (and names of sensitive detector and readout geometry, if any).\n>=  2: solid name and type.\n>=  3: volume and density.\n>=  5: daughter-subtracted volume and mass.\n>=  6: physical volume dump.\n>=  7: polyhedron dump.\nand in the summary at the end of printing:\n>=  4: daughter-included mass of top physical volume(s) in scene to depth specified.\nNote: by default, culling is switched off so all volumes are seen.\nNote: the mass calculation takes into account daughters, which can be time consuming.  If you want the mass of a particular subtree to a particular depth:\n/vis/open ATree\n/vis/ASCIITree/verbose 14\n/vis/scene/create\n/vis/scene/add/volume <subtree-physical-volume> ! <depth>\n/vis/sceneHandler/attach\n/vis/viewer/flush\nNote: dumping the physical volumes produces a lot of output. It is advisable to select the volume of interest, as for a sub-tree above.",
-                "params": [
-                    {
-                        "default": "0",
-                        "name": "verbosity",
-                        "omit": "True",
-                        "type": "i"
-                    }
-                ]
+            "set": {
+                "outFile": {
+                    "guidance": "Set name of output file.",
+                    "params": [
+                        {
+                            "default": "G4cout",
+                            "name": "out-filename",
+                            "omit": "True",
+                            "type": "s"
+                        }
+                    ]
+                }
             }
         },
         "abortReviewKeptEvents": {
@@ -4641,213 +5314,6 @@
                     "type": "b"
                 }
             ]
-        },
-        "filtering": {
-            "digi": {
-                "create": {
-                    "attributeFilter": {
-                        "guidance": "Create a attributeFilter model and associated messengers.\nGenerated model becomes current.",
-                        "params": [
-                            {
-                                "name": "model-name",
-                                "omit": "True",
-                                "type": "s"
-                            }
-                        ]
-                    }
-                }
-            },
-            "hits": {
-                "create": {
-                    "attributeFilter": {
-                        "guidance": "Create a attributeFilter model and associated messengers.\nGenerated model becomes current.",
-                        "params": [
-                            {
-                                "name": "model-name",
-                                "omit": "True",
-                                "type": "s"
-                            }
-                        ]
-                    }
-                }
-            },
-            "trajectories": {
-                "create": {
-                    "attributeFilter": {
-                        "guidance": "Create a attributeFilter model and associated messengers.\nGenerated model becomes current.",
-                        "params": [
-                            {
-                                "name": "model-name",
-                                "omit": "True",
-                                "type": "s"
-                            }
-                        ]
-                    },
-                    "chargeFilter": {
-                        "guidance": "Create a chargeFilter model and associated messengers.\nGenerated model becomes current.",
-                        "params": [
-                            {
-                                "name": "model-name",
-                                "omit": "True",
-                                "type": "s"
-                            }
-                        ]
-                    },
-                    "originVolumeFilter": {
-                        "guidance": "Create a originVolumeFilter model and associated messengers.\nGenerated model becomes current.",
-                        "params": [
-                            {
-                                "name": "model-name",
-                                "omit": "True",
-                                "type": "s"
-                            }
-                        ]
-                    },
-                    "particleFilter": {
-                        "guidance": "Create a particleFilter model and associated messengers.\nGenerated model becomes current.",
-                        "params": [
-                            {
-                                "name": "model-name",
-                                "omit": "True",
-                                "type": "s"
-                            }
-                        ]
-                    }
-                }
-            }
-        },
-        "gMocren": {
-            "addHitName": {
-                "guidance": "hit name for a dose distribution in gMocren data.",
-                "params": [
-                    {
-                        "name": "kgMocrenHitName",
-                        "omit": "False",
-                        "type": "s"
-                    }
-                ]
-            },
-            "addHitScorerName": {
-                "guidance": "hit scorer name for a dose distribution in gMocren data.",
-                "params": [
-                    {
-                        "name": "kgMocrenHitScorerNames",
-                        "omit": "False",
-                        "type": "s"
-                    }
-                ]
-            },
-            "addPointAttributes": {
-                "guidance": "Adds point attributes to the points of trajectories.",
-                "params": [
-                    {
-                        "default": "0",
-                        "name": "flag",
-                        "omit": "False",
-                        "type": "b"
-                    }
-                ]
-            },
-            "appendGeometry": {
-                "guidance": "Appends copy of geometry to every event.",
-                "params": [
-                    {
-                        "default": "1",
-                        "name": "flag",
-                        "omit": "False",
-                        "type": "b"
-                    }
-                ]
-            },
-            "drawVolumeGrid": {
-                "guidance": "Add grid of the volume.",
-                "params": [
-                    {
-                        "default": "0",
-                        "name": "kDrawVolumeGrid",
-                        "omit": "False",
-                        "type": "b"
-                    }
-                ]
-            },
-            "list": {
-                "guidance": "list gMocren command parameters.",
-                "params": []
-            },
-            "resetHitNames": {
-                "guidance": "reset all hit names.",
-                "params": []
-            },
-            "resetHitScorerName": {
-                "guidance": "reset all hit scorer names.",
-                "params": []
-            },
-            "setEventNumberSuffix": {
-                "guidance": "Write separate event files, appended with given suffix.\nDefine the suffix with a pattern such as '-0000'.",
-                "params": [
-                    {
-                        "name": "suffix",
-                        "omit": "False",
-                        "type": "s"
-                    }
-                ]
-            },
-            "setNumberOfVoxels": {
-                "guidance": "set number of voxels.",
-                "params": [
-                    {
-                        "default": "1",
-                        "name": "nX",
-                        "omit": "False",
-                        "type": "i"
-                    },
-                    {
-                        "default": "1",
-                        "name": "nY",
-                        "omit": "False",
-                        "type": "i"
-                    },
-                    {
-                        "default": "1",
-                        "name": "nZ",
-                        "omit": "False",
-                        "type": "i"
-                    }
-                ]
-            },
-            "setScoringMeshName": {
-                "guidance": "scoring mesh name for a dose distribution in gMocren data.",
-                "params": [
-                    {
-                        "default": "gMocrenScoringMesh",
-                        "name": "kgMocrenScoringMeshName",
-                        "omit": "False",
-                        "type": "s"
-                    }
-                ]
-            },
-            "setVolumeName": {
-                "guidance": "detector name for a volume data in gMocren data.",
-                "params": [
-                    {
-                        "default": "gMocrenVolume",
-                        "name": "kgMocrenVolumeName",
-                        "omit": "False",
-                        "type": "s"
-                    }
-                ]
-            },
-            "useSolids": {
-                "guidance": "Use GMocren Solids, rather than Geant4 Primitives.",
-                "params": [
-                    {
-                        "default": "1",
-                        "name": "flag",
-                        "omit": "False",
-                        "type": "b"
-                    }
-                ]
-            }
         },
         "geometry": {
             "set": {
@@ -5078,145 +5544,6 @@
                 }
             }
         },
-        "heprep": {
-            "addPointAttributes": {
-                "guidance": "Adds point attributes to the points of trajectories.\nThis command is used by HepRepXML, not by HepRepFile.",
-                "params": [
-                    {
-                        "default": "0",
-                        "name": "flag",
-                        "omit": "False",
-                        "type": "b"
-                    }
-                ]
-            },
-            "appendGeometry": {
-                "guidance": "Appends copy of geometry to every event.\nThis command is used by HepRepXML, not by HepRepFile.",
-                "params": [
-                    {
-                        "default": "1",
-                        "name": "flag",
-                        "omit": "False",
-                        "type": "b"
-                    }
-                ]
-            },
-            "center": {
-                "guidance": "Re-Center coordinates.",
-                "params": [
-                    {
-                        "default": "0",
-                        "name": "CenterX",
-                        "omit": "True",
-                        "type": "d"
-                    },
-                    {
-                        "default": "0",
-                        "name": "CenterY",
-                        "omit": "True",
-                        "type": "d"
-                    },
-                    {
-                        "default": "0",
-                        "name": "CenterZ",
-                        "omit": "True",
-                        "type": "d"
-                    },
-                    {
-                        "default": "m",
-                        "name": "Unit",
-                        "omit": "True",
-                        "type": "s"
-                    }
-                ]
-            },
-            "renderCylAsPolygons": {
-                "guidance": "Render cylinders and cones as polygons.\nThis command is used by HepRepFile, not by HepRepXML.",
-                "params": [
-                    {
-                        "default": "0",
-                        "name": "flag",
-                        "omit": "False",
-                        "type": "b"
-                    }
-                ]
-            },
-            "scale": {
-                "guidance": "Re-Scale coordinates.\nRange of parameters : Scale > 0",
-                "params": [
-                    {
-                        "default": "1",
-                        "name": "Scale",
-                        "omit": "True",
-                        "type": "d"
-                    }
-                ]
-            },
-            "setCullInvisibles": {
-                "guidance": "Remove invisible objects from output file.\nThis command is used by HepRepFile, not by HepRepXML.",
-                "params": [
-                    {
-                        "default": "0",
-                        "name": "flag",
-                        "omit": "False",
-                        "type": "b"
-                    }
-                ]
-            },
-            "setEventNumberSuffix": {
-                "guidance": "Write separate event files, appended with given suffix.\nDefine the suffix with a pattern such as '-0000'.\nThis command is used by HepRepXML, not by HepRepFile.",
-                "params": [
-                    {
-                        "name": "suffix",
-                        "omit": "False",
-                        "type": "s"
-                    }
-                ]
-            },
-            "setFileDir": {
-                "guidance": "Set directory for output.\nThis command is used by HepRepFile, not by HepRepXML.",
-                "params": [
-                    {
-                        "name": "directory",
-                        "omit": "False",
-                        "type": "s"
-                    }
-                ]
-            },
-            "setFileName": {
-                "guidance": "Set file name for output.\nThis command is used by HepRepFile, not by HepRepXML.",
-                "params": [
-                    {
-                        "default": "G4Data",
-                        "name": "directory",
-                        "omit": "False",
-                        "type": "s"
-                    }
-                ]
-            },
-            "setOverwrite": {
-                "guidance": "Set true to write all output to exact same file name.\nSet false to increment the file name for each new output.\nThis command is used by HepRepFile, not by HepRepXML.",
-                "params": [
-                    {
-                        "default": "0",
-                        "name": "flag",
-                        "omit": "False",
-                        "type": "b"
-                    }
-                ]
-            },
-            "useSolids": {
-                "guidance": "Use HepRep Solids, rather than Geant4 Primitives.\nThis command is used by HepRepXML, not by HepRepFile..",
-                "params": [
-                    {
-                        "default": "1",
-                        "name": "flag",
-                        "omit": "False",
-                        "type": "b"
-                    }
-                ]
-            }
-        },
         "initialize": {
             "guidance": "Initialise visualisation manager.",
             "params": []
@@ -5232,28 +5559,272 @@
                 }
             ]
         },
-        "multithreading": {
-            "actionOnEventQueueFull": {
-                "guidance": "When event queue for drawing gets full:\nwait: event processing waits for vis manager to catch up.\ndiscard: events are discarded for drawing.",
-                "params": [
-                    {
-                        "default": "wait",
-                        "name": "wait",
-                        "omit": "True",
-                        "type": "s"
+        "modeling": {
+            "trajectories": {
+                "drawByCharge-0": {
+                    "default": {
+                        "setAuxPtsColour": {
+                            "guidance": "Set colour through a string",
+                            "params": [
+                                {
+                                    "name": "Variable",
+                                    "omit": "False",
+                                    "type": "s"
+                                }
+                            ]
+                        },
+                        "setAuxPtsColourRGBA": {
+                            "guidance": "Set colour through red, green, blue and alpha components\nFour inputs are expected.",
+                            "params": [
+                                {
+                                    "name": "Red component",
+                                    "omit": "False",
+                                    "type": "d"
+                                },
+                                {
+                                    "name": "Green component",
+                                    "omit": "False",
+                                    "type": "d"
+                                },
+                                {
+                                    "name": "Blue component",
+                                    "omit": "False",
+                                    "type": "d"
+                                },
+                                {
+                                    "name": "Alpha component",
+                                    "omit": "False",
+                                    "type": "d"
+                                }
+                            ]
+                        },
+                        "setAuxPtsFillStyle": {
+                            "guidance": "Set auxiliary fill style.",
+                            "params": [
+                                {
+                                    "name": "",
+                                    "omit": "False",
+                                    "type": "s"
+                                }
+                            ]
+                        },
+                        "setAuxPtsSize": {
+                            "guidance": "Set auxiliary points size command",
+                            "params": [
+                                {
+                                    "name": "",
+                                    "omit": "False",
+                                    "type": "s"
+                                }
+                            ]
+                        },
+                        "setAuxPtsSizeType": {
+                            "guidance": "Set auxiliary size type.",
+                            "params": [
+                                {
+                                    "name": "",
+                                    "omit": "False",
+                                    "type": "s"
+                                }
+                            ]
+                        },
+                        "setAuxPtsType": {
+                            "guidance": "Set auxiliary points type.",
+                            "params": [
+                                {
+                                    "name": "",
+                                    "omit": "False",
+                                    "type": "s"
+                                }
+                            ]
+                        },
+                        "setAuxPtsVisible": {
+                            "guidance": "Set auxiliary points visibility command",
+                            "params": [
+                                {
+                                    "name": "Bool",
+                                    "omit": "False",
+                                    "type": "b"
+                                }
+                            ]
+                        },
+                        "setDrawAuxPts": {
+                            "guidance": "Set draw auxiliary points command",
+                            "params": [
+                                {
+                                    "name": "Bool",
+                                    "omit": "False",
+                                    "type": "b"
+                                }
+                            ]
+                        },
+                        "setDrawLine": {
+                            "guidance": "Set draw line command",
+                            "params": [
+                                {
+                                    "name": "Bool",
+                                    "omit": "False",
+                                    "type": "b"
+                                }
+                            ]
+                        },
+                        "setDrawStepPts": {
+                            "guidance": "Set draw step points command",
+                            "params": [
+                                {
+                                    "name": "Bool",
+                                    "omit": "False",
+                                    "type": "b"
+                                }
+                            ]
+                        },
+                        "setLineColour": {
+                            "guidance": "Set colour through a string",
+                            "params": [
+                                {
+                                    "name": "Variable",
+                                    "omit": "False",
+                                    "type": "s"
+                                }
+                            ]
+                        },
+                        "setLineColourRGBA": {
+                            "guidance": "Set colour through red, green, blue and alpha components\nFour inputs are expected.",
+                            "params": [
+                                {
+                                    "name": "Red component",
+                                    "omit": "False",
+                                    "type": "d"
+                                },
+                                {
+                                    "name": "Green component",
+                                    "omit": "False",
+                                    "type": "d"
+                                },
+                                {
+                                    "name": "Blue component",
+                                    "omit": "False",
+                                    "type": "d"
+                                },
+                                {
+                                    "name": "Alpha component",
+                                    "omit": "False",
+                                    "type": "d"
+                                }
+                            ]
+                        },
+                        "setLineVisible": {
+                            "guidance": "Set line visibility command",
+                            "params": [
+                                {
+                                    "name": "Bool",
+                                    "omit": "False",
+                                    "type": "b"
+                                }
+                            ]
+                        },
+                        "setStepPtsColour": {
+                            "guidance": "Set colour through a string",
+                            "params": [
+                                {
+                                    "name": "Variable",
+                                    "omit": "False",
+                                    "type": "s"
+                                }
+                            ]
+                        },
+                        "setStepPtsColourRGBA": {
+                            "guidance": "Set colour through red, green, blue and alpha components\nFour inputs are expected.",
+                            "params": [
+                                {
+                                    "name": "Red component",
+                                    "omit": "False",
+                                    "type": "d"
+                                },
+                                {
+                                    "name": "Green component",
+                                    "omit": "False",
+                                    "type": "d"
+                                },
+                                {
+                                    "name": "Blue component",
+                                    "omit": "False",
+                                    "type": "d"
+                                },
+                                {
+                                    "name": "Alpha component",
+                                    "omit": "False",
+                                    "type": "d"
+                                }
+                            ]
+                        },
+                        "setStepPtsFillStyle": {
+                            "guidance": "Set step fill style type.",
+                            "params": [
+                                {
+                                    "name": "",
+                                    "omit": "False",
+                                    "type": "s"
+                                }
+                            ]
+                        },
+                        "setStepPtsSize": {
+                            "guidance": "Set step points size command",
+                            "params": [
+                                {
+                                    "name": "",
+                                    "omit": "False",
+                                    "type": "s"
+                                }
+                            ]
+                        },
+                        "setStepPtsSizeType": {
+                            "guidance": "Set step size type.",
+                            "params": [
+                                {
+                                    "name": "",
+                                    "omit": "False",
+                                    "type": "s"
+                                }
+                            ]
+                        },
+                        "setStepPtsType": {
+                            "guidance": "Set step points type.",
+                            "params": [
+                                {
+                                    "name": "",
+                                    "omit": "False",
+                                    "type": "s"
+                                }
+                            ]
+                        },
+                        "setStepPtsVisible": {
+                            "guidance": "Set step points visible command",
+                            "params": [
+                                {
+                                    "name": "Bool",
+                                    "omit": "False",
+                                    "type": "b"
+                                }
+                            ]
+                        },
+                        "setTimeSliceInterval": {
+                            "guidance": "Set time slice interval.  Give unit, e.g., \"0.1 ns\"",
+                            "params": [
+                                {
+                                    "name": "DoubleAndUnit",
+                                    "omit": "False",
+                                    "type": "d"
+                                },
+                                {
+                                    "name": "Unit",
+                                    "omit": "False",
+                                    "type": "s"
+                                }
+                            ]
+                        }
                     }
-                ]
-            },
-            "maxEventQueueSize": {
-                "guidance": "Defines maximum event queue size. N <=0 means \"unlimited\".\nIf adding an event to the visualisation event queue would cause the queue size to exceed this value:\nif actionOnEventQueueFull==wait the worker threads are paused for a short time to give the visualisation manager a chance to catch up.\nif actionOnEventQueueFull==discard the event is discarded for drawing.",
-                "params": [
-                    {
-                        "default": "100",
-                        "name": "maxSize",
-                        "omit": "True",
-                        "type": "i"
-                    }
-                ]
+                }
             }
         },
         "ogl": {
@@ -5545,216 +6116,6 @@
                 }
             ]
         },
-        "rayTracer": {
-            "attenuation": {
-                "guidance": "Define the attenuation length for transparent material.\nNote that this value is independent to the attenuation length for the optical photon processes.\nRange of parameters : Length > 0.",
-                "params": [
-                    {
-                        "default": "1",
-                        "name": "Length",
-                        "omit": "True",
-                        "type": "d"
-                    },
-                    {
-                        "default": "m",
-                        "name": "Unit",
-                        "omit": "True",
-                        "type": "s"
-                    }
-                ]
-            },
-            "backgroundColour": {
-                "guidance": "Command has been deprecated.  Use /vis/viewer/set/background instead.",
-                "params": [
-                    {
-                        "default": "1",
-                        "name": "red",
-                        "omit": "True",
-                        "type": "d"
-                    },
-                    {
-                        "default": "1",
-                        "name": "green",
-                        "omit": "True",
-                        "type": "d"
-                    },
-                    {
-                        "default": "1",
-                        "name": "blue",
-                        "omit": "True",
-                        "type": "d"
-                    }
-                ]
-            },
-            "column": {
-                "guidance": "Define the number of horizontal pixels.\nRange of parameters : nPixel > 0",
-                "params": [
-                    {
-                        "name": "nPixel",
-                        "omit": "False",
-                        "type": "i"
-                    }
-                ]
-            },
-            "distortion": {
-                "guidance": "Distortion effect of the fish eye lens.",
-                "params": [
-                    {
-                        "default": "0",
-                        "name": "flag",
-                        "omit": "True",
-                        "type": "b"
-                    }
-                ]
-            },
-            "eyePosition": {
-                "guidance": "Define the eye position.\nEye direction is calsurated from (target - eyePosition).",
-                "params": [
-                    {
-                        "default": "0",
-                        "name": "X",
-                        "omit": "True",
-                        "type": "d"
-                    },
-                    {
-                        "default": "0",
-                        "name": "Y",
-                        "omit": "True",
-                        "type": "d"
-                    },
-                    {
-                        "default": "0",
-                        "name": "Z",
-                        "omit": "True",
-                        "type": "d"
-                    },
-                    {
-                        "default": "m",
-                        "name": "Unit",
-                        "omit": "True",
-                        "type": "s"
-                    }
-                ]
-            },
-            "headAngle": {
-                "guidance": "Define the head direction.\nRange of parameters : headAngle>=0. && headAngle<360.",
-                "params": [
-                    {
-                        "default": "270",
-                        "name": "headAngle",
-                        "omit": "True",
-                        "type": "d"
-                    },
-                    {
-                        "default": "deg",
-                        "name": "Unit",
-                        "omit": "True",
-                        "type": "s"
-                    }
-                ]
-            },
-            "ignoreTransparency": {
-                "guidance": "Ignore transparency even if the alpha of G4Colour < 1.",
-                "params": [
-                    {
-                        "default": "0",
-                        "name": "flag",
-                        "omit": "True",
-                        "type": "b"
-                    }
-                ]
-            },
-            "lightDirection": {
-                "guidance": "Define the direction of illumination light.\nThe vector needs not to be a unit vector, but it must not be a zero vector.\nRange of parameters : Px != 0 || Py != 0 || Pz != 0",
-                "params": [
-                    {
-                        "default": "0.1",
-                        "name": "Px",
-                        "omit": "True",
-                        "type": "d"
-                    },
-                    {
-                        "default": "0.2",
-                        "name": "Py",
-                        "omit": "True",
-                        "type": "d"
-                    },
-                    {
-                        "default": "0.3",
-                        "name": "Pz",
-                        "omit": "True",
-                        "type": "d"
-                    }
-                ]
-            },
-            "row": {
-                "guidance": "Define the number of virtical pixels.\nRange of parameters : nPixel > 0",
-                "params": [
-                    {
-                        "name": "nPixel",
-                        "omit": "False",
-                        "type": "i"
-                    }
-                ]
-            },
-            "span": {
-                "guidance": "Define the angle per 100 pixels.\nRange of parameters : span>0.",
-                "params": [
-                    {
-                        "default": "50",
-                        "name": "span",
-                        "omit": "True",
-                        "type": "d"
-                    },
-                    {
-                        "default": "deg",
-                        "name": "Unit",
-                        "omit": "True",
-                        "type": "s"
-                    }
-                ]
-            },
-            "target": {
-                "guidance": "Define the center position of the target.",
-                "params": [
-                    {
-                        "default": "0",
-                        "name": "X",
-                        "omit": "True",
-                        "type": "d"
-                    },
-                    {
-                        "default": "0",
-                        "name": "Y",
-                        "omit": "True",
-                        "type": "d"
-                    },
-                    {
-                        "default": "0",
-                        "name": "Z",
-                        "omit": "True",
-                        "type": "d"
-                    },
-                    {
-                        "default": "m",
-                        "name": "Unit",
-                        "omit": "True",
-                        "type": "s"
-                    }
-                ]
-            },
-            "trace": {
-                "guidance": "Start the ray tracing.\nDefine the name of output JPEG file.",
-                "params": [
-                    {
-                        "default": "g4RayTracer.jpeg",
-                        "name": "fileName",
-                        "omit": "True",
-                        "type": "s"
-                    }
-                ]
-            }
-        },
         "reviewKeptEvents": {
             "guidance": "Review kept events.\nIf a macro file is specified, it is executed for each event.\nIf a macro file is not specified, each event is drawn to the current\nviewer.  After each event, the session is paused.  The user may issue\nany allowed command.  Then enter \"cont[inue]\" to continue to the next\nevent.\nUseful commands might be:\n  \"/vis/viewer/...\" to change the view (zoom, set/viewpoint,...).\n  \"/vis/oglx/printEPS\" to get hard copy.\n  \"/vis/open\" to get alternative viewer.\n  \"/vis/abortReviewKeptEvents\", then \"cont[inue]\", to abort.",
             "params": [
@@ -5764,800 +6125,6 @@
                     "type": "s"
                 }
             ]
-        },
-        "scene": {
-            "add": {
-                "arrow": {
-                    "guidance": "Adds arrow to current scene.",
-                    "params": [
-                        {
-                            "name": "x1",
-                            "omit": "False",
-                            "type": "d"
-                        },
-                        {
-                            "name": "y1",
-                            "omit": "False",
-                            "type": "d"
-                        },
-                        {
-                            "name": "z1",
-                            "omit": "False",
-                            "type": "d"
-                        },
-                        {
-                            "name": "x2",
-                            "omit": "False",
-                            "type": "d"
-                        },
-                        {
-                            "name": "y2",
-                            "omit": "False",
-                            "type": "d"
-                        },
-                        {
-                            "name": "z2",
-                            "omit": "False",
-                            "type": "d"
-                        },
-                        {
-                            "default": "m",
-                            "name": "unit",
-                            "omit": "True",
-                            "type": "s"
-                        }
-                    ]
-                },
-                "arrow2D": {
-                    "guidance": "Adds 2D arrow to current scene.",
-                    "params": [
-                        {
-                            "name": "x1",
-                            "omit": "False",
-                            "type": "d"
-                        },
-                        {
-                            "name": "y1",
-                            "omit": "False",
-                            "type": "d"
-                        },
-                        {
-                            "name": "x2",
-                            "omit": "False",
-                            "type": "d"
-                        },
-                        {
-                            "name": "y2",
-                            "omit": "False",
-                            "type": "d"
-                        }
-                    ]
-                },
-                "axes": {
-                    "guidance": "Add axes.\nDraws axes at (x0, y0, z0) of given length and colour.\nIf \"unitcolour\" is \"auto\", x, y and z will be red, green and blue\n  respectively.  Otherwise choose from the pre-defined text-specified\n  colours - see information printed by the vis manager at start-up or\n  use \"/vis/list\".\nIf \"length\" is negative, it is set to about 25% of scene extent.\nIf \"showtext\" is false, annotations are suppressed.",
-                    "params": [
-                        {
-                            "default": "0",
-                            "name": "x0",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "y0",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "z0",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "-1",
-                            "name": "length",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "m",
-                            "name": "unit",
-                            "omit": "True",
-                            "type": "s"
-                        },
-                        {
-                            "default": "auto",
-                            "name": "unitcolour",
-                            "omit": "True",
-                            "type": "s"
-                        },
-                        {
-                            "default": "true",
-                            "name": "showtext",
-                            "omit": "True",
-                            "type": "b"
-                        }
-                    ]
-                },
-                "date": {
-                    "guidance": "Adds date to current scene.\nIf \"date\"is omitted, the current date and time is drawn.\nOtherwise, the string, including the rest of the line, is drawn.",
-                    "params": [
-                        {
-                            "default": "18",
-                            "name": "size",
-                            "omit": "True",
-                            "type": "i"
-                        },
-                        {
-                            "default": "0.95",
-                            "name": "x-position",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0.9",
-                            "name": "y-position",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "right",
-                            "name": "layout",
-                            "omit": "True",
-                            "type": "s"
-                        },
-                        {
-                            "default": "-",
-                            "name": "date",
-                            "omit": "True",
-                            "type": "s"
-                        }
-                    ]
-                },
-                "digis": {
-                    "guidance": "Adds digis to current scene.\nDigis are drawn at end of event when the scene in which\nthey are added is current.",
-                    "params": []
-                },
-                "eventID": {
-                    "guidance": "Adds eventID to current scene.\nRun and event numbers are drawn at end of event or run when\n the scene in which they are added is current.",
-                    "params": [
-                        {
-                            "default": "18",
-                            "name": "size",
-                            "omit": "True",
-                            "type": "i"
-                        },
-                        {
-                            "default": "-0.95",
-                            "name": "x-position",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0.9",
-                            "name": "y-position",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "left",
-                            "name": "layout",
-                            "omit": "True",
-                            "type": "s"
-                        }
-                    ]
-                },
-                "extent": {
-                    "guidance": "Adds a dummy model with given extent to the current scene.\nRequires the limits: xmin, xmax, ymin, ymax, zmin, zmax unit.\nThis can be used to provide an extent to the scene even if\nno other models with extent are available. For example,\neven if there is no geometry.  In that case, for example:\n  /vis/open OGL\n  /vis/scene/create\n  /vis/scene/add/extent -300 300 -300 300 -300 300 cm\n  /vis/sceneHandler/attach",
-                    "params": [
-                        {
-                            "default": "0",
-                            "name": "xmin",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "xmax",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "ymin",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "ymax",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "zmin",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "zmax",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "m",
-                            "name": "unit",
-                            "omit": "True",
-                            "type": "s"
-                        }
-                    ]
-                },
-                "frame": {
-                    "guidance": "Adds frame to current scene.",
-                    "params": [
-                        {
-                            "default": "0.97",
-                            "name": "size",
-                            "omit": "True",
-                            "type": "d"
-                        }
-                    ]
-                },
-                "hits": {
-                    "guidance": "Adds hits to current scene.\nHits are drawn at end of event when the scene in which\nthey are added is current.",
-                    "params": []
-                },
-                "line": {
-                    "guidance": "Adds line to current scene.",
-                    "params": [
-                        {
-                            "name": "x1",
-                            "omit": "False",
-                            "type": "d"
-                        },
-                        {
-                            "name": "y1",
-                            "omit": "False",
-                            "type": "d"
-                        },
-                        {
-                            "name": "z1",
-                            "omit": "False",
-                            "type": "d"
-                        },
-                        {
-                            "name": "x2",
-                            "omit": "False",
-                            "type": "d"
-                        },
-                        {
-                            "name": "y2",
-                            "omit": "False",
-                            "type": "d"
-                        },
-                        {
-                            "name": "z2",
-                            "omit": "False",
-                            "type": "d"
-                        },
-                        {
-                            "default": "m",
-                            "name": "unit",
-                            "omit": "True",
-                            "type": "s"
-                        }
-                    ]
-                },
-                "line2D": {
-                    "guidance": "Adds 2D line to current scene.",
-                    "params": [
-                        {
-                            "name": "x1",
-                            "omit": "False",
-                            "type": "d"
-                        },
-                        {
-                            "name": "y1",
-                            "omit": "False",
-                            "type": "d"
-                        },
-                        {
-                            "name": "x2",
-                            "omit": "False",
-                            "type": "d"
-                        },
-                        {
-                            "name": "y2",
-                            "omit": "False",
-                            "type": "d"
-                        }
-                    ]
-                },
-                "logicalVolume": {
-                    "guidance": "Adds a logical volume to the current scene,\nShows boolean components (if any), voxels (if any) and readout geometry\n(if any).  Note: voxels are not constructed until start of run -\n \"/run/beamOn\".  (For voxels without a run, \"/run/beamOn 0\".)",
-                    "params": [
-                        {
-                            "name": "logical-volume-name",
-                            "omit": "False",
-                            "type": "s"
-                        },
-                        {
-                            "default": "1",
-                            "name": "depth-of-descent",
-                            "omit": "True",
-                            "type": "i"
-                        },
-                        {
-                            "default": "1",
-                            "name": "booleans-flag",
-                            "omit": "True",
-                            "type": "b"
-                        },
-                        {
-                            "default": "1",
-                            "name": "voxels-flag",
-                            "omit": "True",
-                            "type": "b"
-                        },
-                        {
-                            "default": "1",
-                            "name": "readout-flag",
-                            "omit": "True",
-                            "type": "b"
-                        },
-                        {
-                            "default": "1",
-                            "name": "axes-flag",
-                            "omit": "True",
-                            "type": "b"
-                        }
-                    ]
-                },
-                "logo": {
-                    "guidance": "Adds a G4 logo to the current scene.\nIf \"unit\" is \"auto\", height is roughly one tenth of scene extent.\n\"direction\" is that of outward-facing normal to front face of logo.\nIf \"direction\" is \"auto\", logo faces the user in the current viewer.\nIf \"placement\" is \"auto\", logo is placed at bottom right of screen\n  when viewed from logo direction.",
-                    "params": [
-                        {
-                            "default": "1",
-                            "name": "height",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "auto",
-                            "name": "unit",
-                            "omit": "True",
-                            "type": "s"
-                        },
-                        {
-                            "default": "auto",
-                            "name": "direction",
-                            "omit": "True",
-                            "type": "s"
-                        },
-                        {
-                            "default": "0",
-                            "name": "red",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "1",
-                            "name": "green",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "blue",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "auto",
-                            "name": "placement",
-                            "omit": "True",
-                            "type": "s"
-                        },
-                        {
-                            "default": "0",
-                            "name": "xmid",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "ymid",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "zmid",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "m",
-                            "name": "unit",
-                            "omit": "True",
-                            "type": "s"
-                        }
-                    ]
-                },
-                "logo2D": {
-                    "guidance": "Adds 2D logo to current scene.",
-                    "params": [
-                        {
-                            "default": "48",
-                            "name": "size",
-                            "omit": "True",
-                            "type": "i"
-                        },
-                        {
-                            "default": "-0.9",
-                            "name": "x-position",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "-0.9",
-                            "name": "y-position",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "left",
-                            "name": "layout",
-                            "omit": "True",
-                            "type": "s"
-                        }
-                    ]
-                },
-                "magneticField": {
-                    "guidance": "Adds magnetic field representation to current scene.\nThe first parameter is no. of data points per half scene.  So, possibly, at\nmaximum, the number of data points sampled is (2*n+1)^3, which can grow\nlarge--be warned!\nYou might find that your scene is cluttered by thousands of arrows for\nthe default number of data points, so try reducing to 2 or 3, e.g:\n  /vis/scene/add/magneticField 3\nor, if only a small part of the scene has a field:\n  /vis/scene/add/magneticField 50 # or more\nIn the arrow representation, the length of the arrow is proportional\nto the magnitude of the field and the colour is mapped onto the range\nas a fraction of the maximum magnitude: 0->0.5->1 is blue->green->red.",
-                    "params": [
-                        {
-                            "default": "10",
-                            "name": "nDataPointsPerHalfScene",
-                            "omit": "True",
-                            "type": "i"
-                        },
-                        {
-                            "default": "fullArrow",
-                            "name": "representation",
-                            "omit": "True",
-                            "type": "s"
-                        }
-                    ]
-                },
-                "psHits": {
-                    "guidance": "Adds Primitive Scorer Hits (PSHits) to current scene.\nPSHits are drawn at end of run when the scene in which\nthey are added is current.\nOptional parameter specifies name of scoring map.  By default all\nscoring maps registered with the G4ScoringManager are drawn.",
-                    "params": [
-                        {
-                            "default": "all",
-                            "name": "mapname",
-                            "omit": "True",
-                            "type": "s"
-                        }
-                    ]
-                },
-                "scale": {
-                    "guidance": "Adds an annotated scale line to the current scene.\nIf \"unit\" is \"auto\", length is roughly one tenth of the scene extent.\nIf \"direction\" is \"auto\", scale is roughly in the plane of the current view.\nIf \"placement\" is \"auto\", scale is placed at bottom left of current view.\n  Otherwise placed at (xmid,ymid,zmid).\nAn annotated line in the specified direction with tick marks at the\nend.  If autoPlacing is true it is required to be centred at the\nfront, right, bottom corner of the world space, comfortably outside\nthe existing bounding box/sphere so that existing objects do not\nobscure it.  Otherwise it is required to be drawn with mid-point at\n(xmid, ymid, zmid).\n\nThe auto placing algorithm might be:\n  x = xmin + (1 + comfort) * (xmax - xmin);\n  y = ymin - comfort * (ymax - ymin);\n  z = zmin + (1 + comfort) * (zmax - zmin);\n  if direction == x then (x - length,y,z) to (x,y,z);\n  if direction == y then (x,y,z) to (x,y + length,z);\n  if direction == z then (x,y,z - length) to (x,y,z);",
-                    "params": [
-                        {
-                            "default": "1",
-                            "name": "length",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "auto",
-                            "name": "unit",
-                            "omit": "True",
-                            "type": "s"
-                        },
-                        {
-                            "default": "auto",
-                            "name": "direction",
-                            "omit": "True",
-                            "type": "s"
-                        },
-                        {
-                            "default": "1",
-                            "name": "red",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "green",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "blue",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "auto",
-                            "name": "placement",
-                            "omit": "True",
-                            "type": "s"
-                        },
-                        {
-                            "default": "0",
-                            "name": "xmid",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "ymid",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "zmid",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "m",
-                            "name": "unit",
-                            "omit": "True",
-                            "type": "s"
-                        }
-                    ]
-                },
-                "text": {
-                    "guidance": "Adds text to current scene.\nUse \"/vis/set/textColour\" to set colour.\nUse \"/vis/set/textLayout\" to set layout:",
-                    "params": [
-                        {
-                            "default": "0",
-                            "name": "x",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "y",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "z",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "m",
-                            "name": "unit",
-                            "omit": "True",
-                            "type": "s"
-                        },
-                        {
-                            "default": "12",
-                            "name": "font_size",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "x_offset",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "y_offset",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "Hello G4",
-                            "name": "text",
-                            "omit": "True",
-                            "type": "s"
-                        }
-                    ]
-                },
-                "text2D": {
-                    "guidance": "Adds 2D text to current scene.\nUse \"/vis/set/textColour\" to set colour.\nUse \"/vis/set/textLayout\" to set layout:",
-                    "params": [
-                        {
-                            "default": "0",
-                            "name": "x",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "y",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "12",
-                            "name": "font_size",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "x_offset",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "y_offset",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "Hello G4",
-                            "name": "text",
-                            "omit": "True",
-                            "type": "s"
-                        }
-                    ]
-                },
-                "trajectories": {
-                    "guidance": "Adds trajectories to current scene.\nCauses trajectories, if any, to be drawn at the end of processing an\nevent.  Switches on trajectory storing and sets the\ndefault trajectory type.\nThe command line parameter list determines the default trajectory type.\nIf it contains the string \"smooth\", auxiliary inter-step points will\nbe inserted to improve the smoothness of the drawing of a curved\ntrajectory.\nIf it contains the string \"rich\", significant extra information will\nbe stored in the trajectory (G4RichTrajectory) amenable to modeling\nand filtering with \"/vis/modeling/trajectories/create/drawByAttribute\"\nand \"/vis/filtering/trajectories/create/attributeFilter\" commands.\nIt may contain both strings in any order.\nTo switch off trajectory storing: \"/tracking/storeTrajectory 0\".\nSee also \"/vis/scene/endOfEventAction\".\nNote:  This only sets the default.  Independently of the result of this\ncommand, a user may instantiate a trajectory that overrides this default\nin PreUserTrackingAction.",
-                    "params": [
-                        {
-                            "name": "default-trajectory-type",
-                            "omit": "True",
-                            "type": "s"
-                        }
-                    ]
-                },
-                "userAction": {
-                    "guidance": "Add named Vis User Action to current scene.\nAttempts to match search string to name of action - use unique sub-string.\n(Use /vis/list to see names of registered actions.)\nIf name == \"all\" (default), all actions are added.",
-                    "params": [
-                        {
-                            "default": "all",
-                            "name": "action-name",
-                            "omit": "True",
-                            "type": "s"
-                        }
-                    ]
-                },
-                "volume": {
-                    "guidance": "Adds a physical volume to current scene, with optional clipping volume.\nIf physical-volume-name is \"world\" (the default), the top of the\nmain geometry tree (material world) is added.  If \"worlds\", the\ntop of all worlds - material world and parallel worlds, if any - are\nadded.  Otherwise a search of all worlds is made, taking the first\nmatching occurence only.  To see a representation of the geometry\nhierarchy of the worlds, try \"/vis/drawTree [worlds]\" or one of the\ndriver/browser combinations that have the required functionality, e.g., HepRep.\nIf clip-volume-type is specified, the subsequent parameters are used to\nto define a clipping volume.  For example,\n\"/vis/scene/add/volume ! ! ! -box km 0 1 0 1 0 1\" will draw the world\nwith the positive octant cut away.  (If the Boolean Processor issues\nwarnings try replacing 0 by 0.000000001 or something.)\nIf clip-volume-type is prepended with '-', the clip-volume is subtracted\n(cutaway). (This is the default if there is no prepended character.)\nIf '*' is prepended, the intersection of the physical-volume and the\nclip-volume is made. (You can make a section/DCUT with a thin box, for\nexample).\nFor \"box\", the parameters are xmin,xmax,ymin,ymax,zmin,zmax.\nOnly \"box\" is programmed at present.",
-                    "params": [
-                        {
-                            "default": "world",
-                            "name": "physical-volume-name",
-                            "omit": "True",
-                            "type": "s"
-                        },
-                        {
-                            "default": "-1",
-                            "name": "copy-no",
-                            "omit": "True",
-                            "type": "i"
-                        },
-                        {
-                            "default": "-1",
-                            "name": "depth-of-descent",
-                            "omit": "True",
-                            "type": "i"
-                        },
-                        {
-                            "default": "none",
-                            "name": "clip-volume-type",
-                            "omit": "True",
-                            "type": "s"
-                        },
-                        {
-                            "default": "m",
-                            "name": "parameter-unit",
-                            "omit": "True",
-                            "type": "s"
-                        },
-                        {
-                            "default": "0",
-                            "name": "parameter-1",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "parameter-2",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "parameter-3",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "parameter-4",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "parameter-5",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "0",
-                            "name": "parameter-6",
-                            "omit": "True",
-                            "type": "d"
-                        }
-                    ]
-                }
-            }
-        },
-        "sceneHandler": {
-            "attach": {
-                "guidance": "Attaches scene to current scene handler.\nIf scene-name is omitted, current scene is attached.  To see scenes and\nscene handlers, use \"/vis/scene/list\" and \"/vis/sceneHandler/list\"",
-                "params": [
-                    {
-                        "default": "taken from the current value",
-                        "name": "scene-name",
-                        "omit": "True",
-                        "type": "s"
-                    }
-                ]
-            },
-            "create": {
-                "guidance": "Creates an scene handler for a specific graphics system.\nAttaches current scene, if any.  (You can change attached scenes with\n\"/vis/sceneHandler/attach\".)  Invents a scene handler name if not\nsupplied.  This scene handler becomes current.",
-                "params": [
-                    {
-                        "name": "graphics-system-name",
-                        "omit": "False",
-                        "type": "s"
-                    },
-                    {
-                        "default": "taken from the current value",
-                        "name": "scene-handler-name",
-                        "omit": "True",
-                        "type": "s"
-                    }
-                ]
-            },
-            "list": {
-                "guidance": "Lists scene handler(s).\n\"help /vis/verbose\" for definition of verbosity.",
-                "params": [
-                    {
-                        "default": "all",
-                        "name": "scene-handler-name",
-                        "omit": "True",
-                        "type": "s"
-                    },
-                    {
-                        "default": "warnings",
-                        "name": "verbosity",
-                        "omit": "True",
-                        "type": "s"
-                    }
-                ]
-            },
-            "select": {
-                "guidance": "Selects a scene handler.\nMakes the scene handler current.  \"/vis/sceneHandler/list\" to see\n possible scene handler names.",
-                "params": [
-                    {
-                        "name": "scene-handler-name",
-                        "omit": "False",
-                        "type": "s"
-                    }
-                ]
-            }
         },
         "specify": {
             "guidance": "Draws logical volume with Boolean components, voxels and readout geometry.\nCreates a scene consisting of this logical volume and asks the\n  current viewer to draw it to the specified depth of descent\n  showing boolean components (if any), voxels (if any)\n  and readout geometry (if any), under control of the appropriate flag.\nNote: voxels are not constructed until start of run - /run/beamOn.\nThe scene becomes current.",
@@ -6598,127 +6165,6 @@
                     "type": "b"
                 }
             ]
-        },
-        "touchable": {
-            "set": {
-                "colour": {
-                    "guidance": "Set colour of current touchable.\nUse \"/vis/set/touchable\" to set current touchable.\nIf \"red\" is a string understood by the vis system it will be taken.\n  Otherwise the values of\ned\", \"green\", etc., are used.",
-                    "params": [
-                        {
-                            "default": "1.",
-                            "name": "red",
-                            "omit": "True",
-                            "type": "s"
-                        },
-                        {
-                            "default": "1",
-                            "name": "green",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "1",
-                            "name": "blue",
-                            "omit": "True",
-                            "type": "d"
-                        },
-                        {
-                            "default": "1",
-                            "name": "opacity",
-                            "omit": "True",
-                            "type": "d"
-                        }
-                    ]
-                },
-                "daughtersInvisible": {
-                    "guidance": "Daughters of current touchable invisible: true/false.\nUse \"/vis/set/touchable\" to set current touchable.",
-                    "params": [
-                        {
-                            "default": "0",
-                            "name": "daughtersInvisible",
-                            "omit": "True",
-                            "type": "b"
-                        }
-                    ]
-                },
-                "forceAuxEdgeVisible": {
-                    "guidance": "Force auxiliary (soft) edges of current touchable to be visible: true/false.\nUse \"/vis/set/touchable\" to set current touchable.",
-                    "params": [
-                        {
-                            "default": "0",
-                            "name": "forceAuxEdgeVisible",
-                            "omit": "True",
-                            "type": "b"
-                        }
-                    ]
-                },
-                "forceSolid": {
-                    "guidance": "Force current touchable always to be drawn solid (surface drawing).\nUse \"/vis/set/touchable\" to set current touchable.",
-                    "params": [
-                        {
-                            "default": "0",
-                            "name": "forceSolid",
-                            "omit": "True",
-                            "type": "b"
-                        }
-                    ]
-                },
-                "forceWireframe": {
-                    "guidance": "Force current touchable always to be drawn as wireframe.\nUse \"/vis/set/touchable\" to set current touchable.",
-                    "params": [
-                        {
-                            "default": "0",
-                            "name": "forceWireframe",
-                            "omit": "True",
-                            "type": "b"
-                        }
-                    ]
-                },
-                "lineSegmentsPerCircle": {
-                    "guidance": "For current touchable, set number of line segments per circle, the\nprecision with which a curved line or surface is represented by a\npolygon or polyhedron, regardless of the view parameters.\nNegative to pick up G4Polyhedron default value.\nUse \"/vis/set/touchable\" to set current touchable.",
-                    "params": [
-                        {
-                            "default": "-1",
-                            "name": "lineSegmentsPerCircle",
-                            "omit": "True",
-                            "type": "i"
-                        }
-                    ]
-                },
-                "lineStyle": {
-                    "guidance": "Set line style of current touchable drawing.\nUse \"/vis/set/touchable\" to set current touchable.",
-                    "params": [
-                        {
-                            "default": "unbroken",
-                            "name": "lineStyle",
-                            "omit": "True",
-                            "type": "s"
-                        }
-                    ]
-                },
-                "lineWidth": {
-                    "guidance": "Set line width of current touchable.\nUse \"/vis/set/touchable\" to set current touchable.",
-                    "params": [
-                        {
-                            "default": "1",
-                            "name": "lineWidth",
-                            "omit": "True",
-                            "type": "d"
-                        }
-                    ]
-                },
-                "visibility": {
-                    "guidance": "Set visibility of current touchable: true/false.\nUse \"/vis/set/touchable\" to set current touchable.",
-                    "params": [
-                        {
-                            "default": "0",
-                            "name": "visibility",
-                            "omit": "True",
-                            "type": "b"
-                        }
-                    ]
-                }
-            }
         },
         "verbose": {
             "guidance": "Simple graded message scheme - digit or string (1st character defines):\n0) quiet,          Nothing is printed.\n1) startup,        Startup and endup messages are printed...\n2) errors,         ...and errors...\n3) warnings,       ...and warnings...\n4) confirmations,  ...and confirming messages...\n5) parameters,     ...and parameters of scenes and views...\n6) all             ...and everything available.",
