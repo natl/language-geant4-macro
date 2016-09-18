@@ -73,7 +73,6 @@ def to_json():
     a = read_command_file()
     while True in [(r"/" in key) for key in a.keys()]:
         a = recurse_dictionary(a)
-        print([(r"/" in key) for key in a.keys()])
     outfile.write(json.dumps(a, sort_keys=True, indent=4))
     outfile.close()
     return None

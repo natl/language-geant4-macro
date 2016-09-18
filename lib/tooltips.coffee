@@ -58,7 +58,7 @@ class Tooltips
         text = text + "<ol>"
         for param in dictionary.params
           text = text + "<li>"
-          text = text + param.name + " " if param.name?
+          text = text + "name: " + param.name + " " if param.name?
           text = text + "type: " + param.type + " " if param.type?
           text = text + "default: " + param.default + " " if param.default?
           text = text + "(optional)" if param.omit == "True"
