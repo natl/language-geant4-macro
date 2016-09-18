@@ -43,6 +43,9 @@ class Tooltips
         # don't forget regex to remove trailing spaces
         path.push(node.textContent.replace(/\s+/g, ''))
 
+      # break at end of command
+      break if node.textContent == evt.path[0].textContent
+
     @tooltipDestroy()
     dictionary = @commandCompletions
     for command in path
