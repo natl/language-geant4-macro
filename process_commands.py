@@ -5,19 +5,6 @@ Generate the coffeescript arrays of geant4 commands
 """
 import json
 
-# class NestedDict(dict):
-#     def __init__(self, *args):
-#         super(NestedDict, self).__init__(args)
-#
-#     def __getitem__(self, idx_list):
-#         obj = self
-#         for idx in idx_list:
-#             obj = obj.__getitem__(idx)
-#         return obj
-#
-#     def __setitem__(self, idx_list, value):
-#         self
-
 
 def read_command_file():
     f = open("G4command.txt", "r")
@@ -28,6 +15,9 @@ def read_command_file():
         # clean line
         line = line.replace(r"//", "")
         line = line[:-1]
+        if line[:24] == r"Command directory path :":
+            inGuidance = False
+            current_command = ""
         if line[:9] == r"Command /":
             print(line)
             inGuidance = False
@@ -81,9 +71,7 @@ def recurse_dictionary(d):
 def to_json():
     outfile = open("completions.json", "w")
     a = read_command_file()
-    oldlen = 0
-    while oldlen != len(a):
-        oldlen = len(a)
+    while True in [(r"/" in key) for key in a.keys()]:
         a = recurse_dictionary(a)
     outfile.write(json.dumps(a, sort_keys=True, indent=4))
     outfile.close()
