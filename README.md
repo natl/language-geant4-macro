@@ -32,3 +32,8 @@ python process_commands.py
 
 This will replace the completions.json file with the commands particular to
 the G4UI commands within G4command.txt file
+
+If your custom commands have the guidance properly set up, then you should
+also be abe to access the guidance by hovering over the functions (note
+that there should only be one function per line of the macro file.)
+![Tooltips to display guidance](https://cloud.githubusercontent.com/assets/2887977/18610840/49058054-7d27-11e6-820d-438f00f2a5fb.gif)
