@@ -58,12 +58,18 @@ def recurse_dictionary(d):
             key_prefix = "/".join(splitkey[:(len(splitkey) - 1)])
             key_suffix = splitkey[len(splitkey) - 1]
             if key_prefix in out:
-                out[key_prefix][key_suffix] = v
+                if key_suffix in out[key_prefix]:
+                    out[key_prefix][key_suffix].update(v)
+                else:
+                    out[key_prefix][key_suffix] = v
             else:
                 out[key_prefix] = {}
                 out[key_prefix][key_suffix] = v
         else:
-            out[k] = v
+            if k in out:
+                out[k].update(v)
+            else:
+                out[k] = v
 
     return out
 

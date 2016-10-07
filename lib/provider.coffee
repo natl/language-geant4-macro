@@ -25,7 +25,11 @@ module.exports =
     spl = line.split(' ')
     line = spl[spl.length - 1]
 
-    if line.match(endOfCommand) != null and line.match(/^\//) != null
+    endMatch = line.match(endOfCommand)
+    lineMatch = line.match(/^\//)
+    commandMatch = line.match(wholeCommand)
+
+    if endMatch != null and lineMatch != null and commandMatch != null
       @isCommand = true
       line.match(endOfCommand)[0].split('/')[1]
     else if line.match(unit) != null
