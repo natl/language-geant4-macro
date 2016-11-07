@@ -19,6 +19,17 @@
         'match': '(?<=\/)([a-zA-Z0-9]+)[ \n]'
     }
     {
+        # This is how aliases are used
+        'name': 'support.variable.g4alias'
+        # In fact, it is possible to create very obscure aliases but let's stick to normal ones
+        'match': '(?<=\{)([a-zA-Z0-9_\-]+)(?=\})'
+    }
+    {
+        # This is how aliases are defined
+        'name': 'support.variable.g4alias.def'
+        'match': '(?<=\/control\/alias )([a-zA-Z0-9_\-]+)'
+    }      
+    {
         'name': 'constant.boolean'
         'match': '(?<!\/)\\b(true|false|TRUE|FALSE|t|f|T|F)\\b(?!\/)'
     }
